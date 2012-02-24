@@ -1,0 +1,33 @@
+#labels Phase-Design
+#Spatial relation types for LORE.
+
+= Spatial relation types =
+
+*Name:* is part of
+
+*Definition:* For entities S and O, it holds that ‘S is part of O’, if and only if 1) S and O are within the same mereologically dimensioned area (like space, time, space-time, or any ordered space), 2) the volume of S is a part of the volume of O (where volumes are not made convex). E.g. Kreta is part of Europe, the morning is part of the day, the skin is part of the body, the chapter is part of the book.
+
+*Problems:* ‘is part of’ has a broader application compared to other mereological relation types like ‘is located in’, since it is also used for time.
+
+*Algebraic properties:* reflexive, transitive
+Rule: if S is part of O and O is a spatial object, then S is located in O
+
+----
+
+*Name:* is located in
+
+*Definition:* For entities S and O, it holds that ‘S is located in O’, if and only if 1) S and O are within the same spatially dimensioned area, 2) O has a (not necessarily convex) outside border or envelope and 3) the volume (or area) of S is a part of the volume (or area) within the outside borders of O. E.g. a person is located in a car, Iceland is located in Europe.
+
+*Problems:* the application of ‘is located in’ depends on the definition of the outside borders of O. If the beaches of La Palma define the outside borders of the Atlantic Ocean, then La Palma is not located in the Atlantic Ocean, otherwise it is. Somewhat counterintuitively, a wheel is located in a car and a chimney is located in a house.
+
+*Algebraic properties:* reflexive, transitive
+
+----
+
+*Name:* is contained in
+
+*Definition:* For entities S and O, it holds that ‘S is contained in O’, if and only if 1) S and O are within the same spatially dimensioned area, 2) O has an associated container volume defined by the outside borders of O (like a convex envelope, or a convex envelope minus the volume of O) and 3) the volume (or area) of S is a part of the associated container volume of O. E.g. some water is contained in a glass, La Palma is contained in the Atlantic Ocean. A wheel that is part of a car, and therefore located in that car, is not contained in the car.
+
+*Problems:* the application of ‘is contained in’ depends on the definition of the associated container volume of O. This definition may often be very similar as the definition of the outside borders for ‘is located in’.
+
+*Algebraic properties:* reflexive, transitive
