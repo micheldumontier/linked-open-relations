@@ -12,7 +12,7 @@
 *Problems:* ‘is part of’ has a broader application compared to other mereological relation types like ‘is located in’, since it is also used for time.
 
 *Algebraic properties:* reflexive, transitive
-Rule: if S is part of O and O is a spatial object, then S is located in O
+Rule: if S is part of O and O is a spatial entity, then S is located in O
 
 ----
 
@@ -37,3 +37,27 @@ Rule: if S is part of O and O is a spatial object, then S is located in O
 *Problems:* the application of ‘is contained in’ depends on the definition of the associated container volume of O. This definition may often be very similar as the definition of the outside borders for ‘is located in’.
 
 *Algebraic properties:* reflexive, transitive
+
+----
+
+*Name:* is directly connected to
+
+*Definition:* For entities S and O, it holds that ‘S is directly connected to O’, if and only if 1) S and O are components within the same network (abstract, spatial or mereological), consisting of components and connections between the components and 2) S and O share a connection
+
+*Examples:* Germany is directly connected to France, Brussels Airport is directly connected to Vienna Airport, the paint is directly connected to the wall
+
+*Problems:* The use of 'is directly connected to' depends on the precise definition of a network in which S and O are viewed as components. Entities are not necessarily directly connected to themselves, however, they can be.
+
+*Algebraic properties:* subtype of 'is connected to'
+
+----
+
+*Name:* is connected to
+
+*Definition:* For entities S and O, it holds that ‘S is connected to O’, if and only if 1) S and O are components within the same network (abstract, spatial or mereological), consisting of components and connections between the components and 2) there is a series of connections and network components between S and O.
+
+*Examples:* Germany is connected to Greece, Trondheim Airport is connected to Pago Pago International Airport, the wheel is connected to the steerwheel
+
+*Problems:* The use of 'is connected to' depends on the precise definition of a network in which S and O are viewed as components. Australia and Canada, viewed as components in a network of roads, are not connected. Viewed in a network of harbours, they are. Entities that are not directly connected to anything else, are not connected to themselves, otherwise they are.
+
+*Algebraic properties:* transitive
