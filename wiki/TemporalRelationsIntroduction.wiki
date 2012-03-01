@@ -7,7 +7,7 @@ This representation of time consider an absolute and linear time. These previous
 
 The first 12 are: before; overlaps; starts; meets; during; finishes; and their inverses. The last relation is Equal.
 
-[http://code.google.com/p/linked-open-relations/downloads/detail?name=TemporalRelationsGraphicalDefinition%2020120301.jpg&can=2&q=]
+[http://linked-open-relations.googlecode.com/files/TemporalRelationsGraphicalDefinition%2020120301.jpg]
 
 Another important use for time expressions in Semantic Web is the explicit assertion about time measures. Duration is a standard measure of time unfolding between the beginning and ending instant of an interval. Time instants can also be indexed according to international standards of time keeping (time zones, dates, and times).
 All these relations can be formally defined and reasoned with by adding axioms. However, due to the volatile nature of the Semantic Web, these axioms must be flexible and extendable. For the time being, we will only use natural language definitions of those relations, referring to already existing axioms when required. Since our understanding of time is highly related to our understanding of space, it is useful to understand these relations as combinations of relations of order, parthood, boundary and co-temporality. For instance, the *finishes* relation means that two time intervals share the finish boundary time instant.
