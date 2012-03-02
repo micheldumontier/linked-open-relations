@@ -13,7 +13,7 @@ Another important use for time expressions in Semantic Web is the explicit asser
 All these relations can be formally defined and reasoned with by adding axioms. However, due to the volatile nature of the Semantic Web, these axioms must be flexible and extendable. For the time being, we will only use natural language definitions of those relations, referring to already existing axioms when required. Since our understanding of time is highly related to our understanding of space, it is useful to understand these relations as combinations of relations of order, parthood, boundary and co-temporality. For instance, the *finishes* relation means that two time intervals share the finish boundary time instant.
 
 = Preliminary summary of relations =
-===First level canonical relations===
+===Third level canonical relations===
 
 Name: precedes
 
@@ -34,7 +34,7 @@ Definition: when projecting on a 1-dimensional ordered space, x hasDateTimeDescr
 
 ===Second level relations===
 
-Name: overlapWith
+Name: overlapsWith
 
 Definition: when projecting on a 1-dimensional space, x overlapWith y iff there is at least 1 z that is part of both x and y, and z is a TimeInterval
 
