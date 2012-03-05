@@ -5,11 +5,18 @@
 
 *Name:* is part of
 
-*Definition:* For entities S and O, it holds that ‘S is part of O’, if and only if 1) S and O are within the same mereologically dimensioned area (like space, time, space-time, or any ordered space), 2) the volume of S is a part of the volume of O (where volumes are not made convex). 
 
-*Examples:* Kreta is part of Europe, the morning is part of the day, the skin is part of the body, the chapter is part of the book.
+*Definition:* For (individual entities) S and O, it holds that ‘S is part of O’, if and only if 1) S and O are within the same mereologically dimensioned area (like space, time, space-time, or any ordered space including abstract space like in information entities), 2) the space S occupies, is a part of the space occupied by O - this applies to 0 to 3 spatial and one temporal dimension.  
 
-*Problems:* ‘is part of’ has a broader application compared to other mereological relation types like ‘is located in’, since it is also used for time.
+(where volumes are not made convex). 
+
+*Examples:* Crete is part of Europe, this morning is part of today, my skin is part of my body, this third chapter is part of this book.
+
+*Problems:* 
+#‘is part of’ has a broader application compared to other mereological relation types like ‘is located in’, since it is also used for time.
+#‘is part of’ in ordinary speech is often understood to exclude reflexivity
+#‘is part of’
+
 
 *Algebraic properties:* reflexive, transitive
 Rule: if S is part of O and O is a spatial entity, then S is located in O
