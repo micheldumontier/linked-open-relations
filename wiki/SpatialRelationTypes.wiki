@@ -9,7 +9,7 @@ a ‘is part of’ b may be TRUE at t1 and FALSE at t2
 
 = Spatial relation types =
 
-*Name:* is part of
+*Name:* is part of 
 
 
 *Definition:* For (individual entities) S and O, it holds that ‘S is part of O’, if and only if 1) S and O are within the same mereologically dimensioned area (like space, time, space-time, or any ordered space including abstract space like in information entities), 2) the space S occupies, is a part of the space occupied by O - this applies to 0 to 3 spatial and one temporal dimension.  
@@ -23,6 +23,7 @@ a ‘is part of’ b may be TRUE at t1 and FALSE at t2
 
 *Algebraic properties:* reflexive, transitive
 Rule: if S is part of O and O is a spatial entity, then S is located in O
+Inverse relation: 'has as part'
 
 ----
 
@@ -36,6 +37,10 @@ Rule: if S is part of O and O is a spatial entity, then S is located in O
 
 *Algebraic properties:* reflexive, transitive
 
+*inverse relation 'is a location of'
+
+*Alternative names:...
+
 ----
 
 *Name:* is contained in
@@ -47,6 +52,10 @@ Rule: if S is part of O and O is a spatial entity, then S is located in O
 *Problems:* the application of ‘is contained in’ depends on the definition of the associated container volume of O. This definition may often be very similar as the definition of the outside borders for ‘is located in’.
 
 *Algebraic properties:* reflexive, transitive
+
+*Inverse relation: 'contains'
+
+*Alternative names:...
 
 ----
 
@@ -61,6 +70,9 @@ According to the characteristics of the network, entities can be connected to th
 
 *Algebraic properties:* symmetric, subtype of 'is connected to'
 
+
+*Alternative names:...
+
 ----
 
 *Name:* is connected to
@@ -71,4 +83,4 @@ According to the characteristics of the network, entities can be connected to th
 
 *Problems:* The use of 'is connected to' depends on the precise definition of a network in which S and O are viewed as components. Australia and Canada, viewed as components in a network of roads, are not connected. Viewed in a network of harbours, they are. Entities that are not directly connected to anything else, are not connected to themselves, otherwise they are.
 
-*Algebraic properties:* symmertric, transitive
+*Algebraic properties:* symmetric, transitive
