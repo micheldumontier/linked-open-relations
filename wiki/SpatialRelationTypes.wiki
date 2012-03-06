@@ -3,33 +3,29 @@
 
 General comments: we understand "space" in a most general sense. It is not restricted to material objects; it includes all kinds of entities related by spatial predicates that are used in language, including fictional entities, information entities etc. 
 
-As long as these relation are asserted between non-processual (non-temporal) entities they time-related. This is not made explicit in a subject-predicate-object representation. The truth value of an expression like 
-a ‘is part of’ b may be TRUE at t1 and FALSE at t2
+As long as these relation are asserted between non-processual (non-temporal) entities they are time-related. This is not made explicit in a binary Subject-Predicate-Object representation. The truth value of an expression like S ‘is a part of’ O may be TRUE at t1 and FALSE at t2
 
 
 = Spatial relation types =
 
-*Name:* is part of 
+*Name:* is a part of 
 
+*Definition:* For individual entities S and O, it holds that ‘S is a part of O’, if and only if 1) S and O are within the same mereologically dimensioned area (like space, time, space-time, or any ordered space including abstract space like in information entities), 2) the space occupied by S, is a part of the space occupied by O.  
 
-*Definition:* For (individual entities) S and O, it holds that ‘S is part of O’, if and only if 1) S and O are within the same mereologically dimensioned area (like space, time, space-time, or any ordered space including abstract space like in information entities), 2) the space S occupies, is a part of the space occupied by O - this applies to 0 to 3 spatial and one temporal dimension.  
-
-*Examples:* Crete is part of Europe, this morning is part of today, my skin is part of my body, this third chapter is part of this book.
+*Examples:* Crete is a part of Europe, this morning is a part of today, my skin is a part of my body, this third chapter is a part of this book.
 
 *Problems:* 
-#‘is part of’ has a broader application compared to other mereological relation types like ‘is located in’, since it is also used for time. It is still left open whether we will distinguish this temporal meaning of ‘is part of’ by a different name.  
-#‘is part of’ in ordinary speech is often understood to exclude reflexivity
+#‘is a part of’ has a broader application compared to other mereological relation types like ‘is located in’, since it is also used for time. It is still left open whether we will distinguish this temporal meaning of ‘is a part of’ by a different name.  
+#‘is a part of’ in ordinary speech is often understood to exclude reflexivity
 
 
-*Algebraic properties:* reflexive, transitive
-Rule: if S is part of O and O is a spatial entity, then S is located in O
-Inverse relation: 'has as part'
+*Algebraic properties:* reflexive, transitive, Rule: if S is a part of O and O is a spatial entity, then S is located in O, Inverse relation: 'has as part'
 
 ----
 
 *Name:* is located in
 
-*Definition:* For entities S and O, it holds that ‘S is located in O’, if and only if 1) S and O are within the same spatially dimensioned area, 2) O has a (not necessarily convex) outside border or envelope and 3) the volume (or area) of S is a part of the volume (or area) within the outside borders of O. 
+*Definition:* For entities S and O, it holds that ‘S is located in O’, if and only if 1) S and O are within the same spatially dimensioned area, 2) O has a (not necessarily convex) outside border or envelope and 3) the space occupied by S is a part of the space occupied by the outside borders of O. 
 
 *Examples:* a person is located in a car, Iceland is located in Europe.
 
@@ -45,7 +41,7 @@ Inverse relation: 'has as part'
 
 *Name:* is contained in
 
-*Definition:* For entities S and O, it holds that ‘S is contained in O’, if and only if 1) S and O are within the same spatially dimensioned area, 2) O has an associated container volume defined by the outside borders of O (like a convex envelope, or a convex envelope minus the volume of O) and 3) the volume (or area) of S is a part of the associated container volume of O.
+*Definition:* For entities S and O, it holds that ‘S is contained in O’, if and only if 1) S and O are within the same spatially dimensioned area, 2) O has an associated container volume defined by the outside borders of O (like a convex envelope, or a convex envelope minus the volume of O) and 3) space occupied by S is a part of the space occupied by the associated container volume of O.
 
 *Examples:* some water is contained in a glass, La Palma is contained in the Atlantic Ocean. A wheel that is part of a car, and therefore located in that car, is not contained in the car.
 
