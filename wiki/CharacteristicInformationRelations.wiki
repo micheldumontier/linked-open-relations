@@ -4,6 +4,8 @@
 
 Characteristic information relation
 
+_It should be better defined what characteristic information relations are. For instance, whether relations like bearer of (qualities or dispositions) go there. As well as relations of the type realizes or concretizes _
+
 = Details =
 
 *denotes*
