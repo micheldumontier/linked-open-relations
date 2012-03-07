@@ -6,7 +6,13 @@ Characteristic information relation
 
 = Details =
 
+*denotes*
+
 The relation „denotes“ relates an information entity with some other entity.  Example: the string of character “Barack Obama”, denotes the person Barack Obama. The string “The president of the U.S.” denotes him in 2012, but not in 2007. An X-ray image denotes a chest of a certain patient at a certain time. 
-Inverse: “denoted by”
-Alternative names: “is about”  
-Issues. The representation of denotation as a binary relation is a simplification. Denotation is time-dependent (see the president example), and it is also dependent on the users. It depends on human conventions such as the meaning of a vocabulary (E.g., in Italian “Monaco” denotes both the country Monaco and the city of Munich). Denotation is frequently not only asserted between individuals but between an individual (the symbol) and a class type. E.g. the word “computer” denotes the class of all computers. Again, this depends on time and conventions, e.g. in German “computer” has always denotes a machine; in English it used to denote “computing professionals” in the past. 
+
+*Inverse*: “denoted by”
+
+*Alternative names*: “is about”  
+
+*Issues*. 
+The representation of denotation as a binary relation is a simplification. Denotation is time-dependent (see the president example), and it is also dependent on the users. It depends on human conventions such as the meaning of a vocabulary (E.g., in Italian “Monaco” denotes both the country Monaco and the city of Munich). Denotation is frequently not only asserted between individuals but between an individual (the symbol) and a class type. E.g. the word “computer” denotes the class of all computers. Again, this depends on time and conventions, e.g. in German “computer” has always denotes a machine; in English it used to denote “computing professionals” in the past. 
