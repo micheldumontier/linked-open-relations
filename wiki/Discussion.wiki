@@ -2,7 +2,39 @@
 
 = Discussion items for the next teleconference =
 
+== Wednesday 14 March 4 pm CET through Google hangout ==
+
+=== Planned topics ===
+
+- go in-depth in the 5 wiki-sections that were edited by each of us
+
+Related issues that were not yet discussed:
+
+- Andre and Ward: should we model temporal relations as the special 1-dimensional case of more generic mereological relations that apply to n dimensions? (e.g. 'overlaps with' in n dimensions?)
+
+- Andre and Ward: can relation types be defined more generic than what would be assumed by reasoners (e.g. temporal relations that can make sense for scattered temporal entities, even though convex entities are expected standardly)
+
+- Andre: had some problems with the action relations too: a child destroys a cup with a hammer, after his father had explained the child how to use the hammer. Does the father, by his indirect action, destroy the cup? Maybe something for the 'issue'-section of such relation types. 
+
+
 == Wednesday 7 March 4 pm CET ==
+
+=== Minutes ===
+
+- discussion about the names: 'is a part of' instead of 'is part of', defended by Stefan for facilitating natural language processing. Michel: is there any evidence that this is needed? Ward: use NLP-compatible names as a special section of the synonyms and use short names that contain a verb.
+
+- discussion on relations and relation types. Michel finds it weird. Stefan thinks 'relation' is fine. Martin wants clarity about this issue. Stefan wants to stress that relations in LORE are binary. Ward will write a short dissertation including the use of relations, relationships, relation types, roles, properties and predicates, in mathematics, logics and the Semantic Web, for pointing out their correspondences. A suggestion for the time being: could we speak of 'roles'? This was another reason to be in favor of the name 'LORE'...
+
+- upper level commitments: Andre wants a proper definition for the very upper classes like 'process', 'material entity', 'information entity', 'temporal entity' and 'spatial entity'. Martin agrees and wants it at least internally among the developers.
+
+- informational, characteristic and comparative roles: the classification made by Michel on the roles in Biorel (20120222_biorel-md.owl) was studied and compared. This has to be sorted out better between Stefan and Martin. Martin had to leave the teleconference when this discussion was just started. A new teleconference next week 14 March at 4 pm CET is scheduled.
+
+- Skype caused problems. Next week Wednesday 14, we will make the conference with Google+ hangout. Stefan also suggested Adobe Connect.
+
+- Michel: next week we should go more in-depth on the 5 wiki-sections that each of us created. 
+
+
+=== Planned topics ===
 
 - Stefan: Naming proposal: is a location of, has as part, is a part of, ...
 
