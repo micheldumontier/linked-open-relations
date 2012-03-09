@@ -1,0 +1,25 @@
+#summary Mission and levels of LORE.
+
+=Mission statement:=
+Create a domain independent standard for Semantic Web relations
+
+=Scope:=
+Harvest binary predicates and relations that are in use, improve them and organize them from a perspective of scientific Knowledge Management and Formal Ontology. LORE provides 1) an orthogonal, domain-independent set of relations expressed as a list of OWL object-properties, 2) practices for creating and managing relation as predicates that are not within this list.
+
+
+=Three semantic levels:=
+LORE distinguishes between three semantic levels:
+
+ * LEVEL 1) predicates (e.g. ‘stands in’), close to natural language
+ * LEVEL 2) generic, ontological relations that are accessible for widespread usage (e.g. ‘is located in’), and 
+ * LEVEL 3) Relations that are refinements of Level 2 relations, which can normally be fully defined.  
+
+Level 2 would be such that levels 1 and 3 can contain subrelation (or chained relations) of 2.  
+Levels (1) and (2) would be SPARQL-friendly.
+Levels (2) and (3) would be reasoning-friendly.
+
+
+Level 1 relations are mostly intuitively understandable, but may be ambiguous and highly context-dependent. Level 2 and 3 relations may be enigmatic (e.g. ‘is physical proper part of’), and not easily understandable to people outside KM. A convenient naming of these relations is therefore important.
+
+
+LORE provides standard practices for all three levels. It provides actual relations in levels (2) and (3). At least for (2), they are expressed as owl:objectProperty’s. In level (1), popular and important examples may be provided. In level (3), modeling practices (via OWL) may be provided. Level (2) will be specially promoted by LORE, in order to enable easier upgrade to level (3).
