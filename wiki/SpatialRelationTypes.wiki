@@ -109,3 +109,30 @@ According to the characteristics of the network, entities can be connected to th
 *Problems:* The use of 'is connected to' depends on the precise definition of a network in which S and O are viewed as components. Australia and Canada, viewed as components in a network of roads, are not connected. Viewed in a network of harbours, they are. Entities that are not directly connected to anything else, are not connected to themselves, otherwise they are.
 
 *Algebraic properties:* symmetric, transitive
+
+
+----
+
+*Name:* is before
+
+*Definition:* For entities S and O, it holds that 'S is before O', if and only if 1) S and O are entities within the same 1-dimensional ordered space, including the time-axis and 2) S is ordered before O (where order goes from early to late, close to far, low to high, small to large and few to many)
+
+*Examples:* World War I is before World War II, the runner that arrived first is before the runner that arrived second, 3 is before 5, on the trip from Paris to London, Calais is before Dover
+
+*Problems:* The definition of the defined order may depend on a specific context, like in the trip from Paris to London. 
+
+*Algebraic properties:* transitive, inverse relation: is after
+
+----
+
+*Name:* is after
+
+*Definition:* For entities S and O, it holds that 'S is after O', if and only if 1) S and O are entities within the same 1-dimensional ordered space, including the time-axis and 2) S is ordered after O (where order goes from early to late, close to far, low to high, small to large and few to many)
+
+*Examples:* World War II is after World War I, the runner that arrived second is after the runner that arrived first, 5 is after 3, on the trip from Paris to London, Dover is after Calais
+
+*Problems:* The definition of the defined order may depend on a specific context, like in the trip from Paris to London. 
+
+*Algebraic properties:* transitive, inverse relation: is before
+
+
