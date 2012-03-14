@@ -1,11 +1,25 @@
 #summary Mission and levels of LORE.
 
+Created by: 
+André Andrade
+Ward Blondé
+Martin Boeker
+Michel Dumontier
+Stefan Schulz
+
+---- 
+
 =Mission statement:=
 Create a domain independent standard for Semantic Web relations
 
 =Scope:=
-Harvest binary predicates and relations that are in use, improve them and organize them from a perspective of scientific Knowledge Management and Formal Ontology. LORE provides 1) an orthogonal, domain-independent set of relations expressed as a list of OWL object-properties, 2) practices for creating and managing relation as predicates that are not within this list.
+The objective of lore is to harvest binary predicates and relations that are in use, improve them and organize them from a perspective of scientific Knowledge Management and Formal Ontology. 
 
+LORE is proposing to provide 
+# an orthogonal, domain-independent set of binary relations expressed as a (limited) list of OWL object-properties;
+# a characterization of each relation in terms of meaning, scope restrictions, algebraic properties; 
+# practices for creating and transforming predicate-like relations from the semantic Web that are not within this list.
+# develop and assess rules for (1) chaining LORE relations and for (2) transforming triple-like expressions containing non-LORE relations into triples containing  LORE relations. 
 
 =Three semantic levels:=
 LORE distinguishes between three semantic levels:
