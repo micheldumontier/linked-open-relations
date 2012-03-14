@@ -95,7 +95,9 @@ For all levels popular and important examples may be provided.
 Rules are an important means for transforming between relation expressions. The following example instantiates a rule that transforms between level 2 and level 3:
 
 {{{
- "France *has-province* Bretagne" and  "Bretagne *has-type* Province" <=>
+ "France *has-province* Bretagne" 
+ "Bretagne *has-type* Province" 
+ <=>
  "France *has-part* Bretagne"
 }}}
 
@@ -105,6 +107,8 @@ The rule could be abstracted as
  (?X *has-province* ?Y) and (?Y *has-type* Province) <=>
  (?X *has-part* ?Y)
 }}}
+
+The next rule example applies to the transformation between level 1 and 2
 
 
 
