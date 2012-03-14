@@ -70,7 +70,6 @@ Characteristics:
 
  * They are often domain dependent. Example: *has-town* is a level 3 subrelation of *has-part*. An example for a rule that can be applied:
 
-
  "France *has-province* Bretagne" and 
  "Bretagne *has-type* Provinve" <=>
  "France *has-part* Bretagne"
