@@ -31,7 +31,7 @@ Until these controversies are settled we use uniformly the word "relation", dist
 LORE classifies relations as, in a first approximation, distinguished between the following three semantic levels:
 
  * LEVEL 1) 
-relations denote predicate-like relations (e.g. ‘stands in’, `phosphorylizes´, `has-author´), close to natural language.
+relations denote predicate-like relations (e.g. *stands in*, *phosphorylizes*, *has-author*), close to natural language.
 We can here further distinguish between 
 a) domain dependent relations 
 b) domain-independent relations
