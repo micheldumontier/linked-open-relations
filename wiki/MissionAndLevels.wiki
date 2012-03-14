@@ -20,11 +20,11 @@ LORE is proposing to provide
 
  * a characterization of each relation in terms of meaning, scope restrictions, algebraic properties; 
 
-* practices for creating and transforming predicate-like relations from the semantic Web that are not within this list.
+ * practices for creating and transforming predicate-like relations from the semantic Web that are not within this list.
 
-* develop and for (1) chaining LORE relations and for (2) transforming triple-like expressions containing non-LORE relations into triples containing LORE relations. 
+ * develop and for (1) chaining LORE relations and for (2) transforming triple-like expressions containing non-LORE relations into triples containing LORE relations. 
 
-* assess these rules using real data. In contrast to the practice of formal ontology, rule are not either true or false. Rather, we assess the usefulness of rules from a retrieval background (precision / recall). For instance, if a rule tends to overgenerate, it may still be useful in a recall-optimized information retrieval scenario. 
+ * assess these rules using real data. In contrast to the practice of formal ontology, rule are not either true or false. Rather, we assess the usefulness of rules from a retrieval background (precision / recall). For instance, if a rule tends to overgenerate, it may still be useful in a recall-optimized information retrieval scenario. 
 
 
 ==Terminological issues==
@@ -41,20 +41,45 @@ a) domain dependent relations
 b) domain-independent relations
 Characteristics of level 1 relations:
 
-* Most of these relations would better describe the domain if they were n-ary (n > 2 )
+ * Most of these relations would better describe the domain if they were n-ary (n > 2 )
 
-* From an ontological point of view, Level 1 relations are normally not used in defining axioms. 
+ * From an ontological point of view, Level 1 relations are normally not used in defining axioms. 
 
-* There is also a tendency to assert level 1 relations between classes _Insulin_ *stimulates* _Receptor_
+ * There is also a tendency to assert level 1 relations between classes _Insulin_ *stimulates* _Receptor_
 
-* In many ontologies level 1 relations are expressed as classes, e.g. _Phosphorylation_, _Authoring_...
+ * In many ontologies level 1 relations are expressed as classes, e.g. _Phosphorylation_, _Authoring_..., in order to express dispositional or procedural knowledge. 
 
 
+===LEVEL 2=== 
+These relations are ontological in a strict sense. They have the following characteristics: 
 
-===LEVEL 2=== relations are those which are generic, ontological relations that are accessible for widespread usage (e.g. ‘is located in’), and 
+ * They are domain-independent
+
+ * They can be used for expressing inherent properties of entities as necessary conditions by universal quantification.
+
+ * They are binary, although they would, in order to be complete, often require time as a third argument
+
+ * Despite their universal applicability they are often seldomly used in triple stores
+ 
 
 ===LEVEL 3=== 
-Relations that are refinements of Level 2 relations, which can normally be fully defined.  
+These relations that are refinements of Level 2 relations. 
+Characteristics:
+
+ * They can normally be fully defined.
+
+ * They are often domain dependent. Example: *has-town* is a level 3 subrelation of *has-part*. An example for a rule that can be applied:
+{{{
+"France *has-province* Bretagne" and "Bretagne *has-type* Provinve" <=>
+"France *has-part* Bretagne"
+}}}
+   
+
+
+
+
+
+
 
 Level 2 would be such that levels 1 and 3 can contain subrelation (or chained relations) of 2.  
 Levels (1) and (2) would be SPARQL-friendly.
