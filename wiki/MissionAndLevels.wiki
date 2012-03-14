@@ -23,16 +23,26 @@ LORE is proposing to provide
 # assess these rules using real data. In contrast to the practice of formal ontology, rule are not either true or false. Rather, we assess the usefulness of rules from a retrieval background (precision / recall). For instance, if a rule tends to overgenerate, it may still be useful in a recall-optimized information retrieval scenario. 
 
 
-=Terminological issues
+=Terminological issues=
 There are controversies regarding the use of terms like "relation", "relationships", "role", "relation type", "relation instance", "relation assertion", "predicate", "predication". 
 Until these controversies are settled we use uniformly the word "relation", distinguishing between LORE and non-LORE relations.
 
-=Three semantic levels:=
-LORE relations are, in a first approximation, distinguished between the following three semantic levels:
+=Three semantic levels=
+LORE classifies relations as, in a first approximation, distinguished between the following three semantic levels:
 
  * LEVEL 1) 
-relations denote predicate-like (e.g. ‘stands in’, `phosphorylizes´), close to natural language
- * LEVEL 2) generic, ontological relations that are accessible for widespread usage (e.g. ‘is located in’), and 
+relations denote predicate-like relations (e.g. ‘stands in’, `phosphorylizes´, `has-author´), close to natural language.
+We can here further distinguish between 
+a) domain dependent relations 
+b) domain-independent relations
+** From an ontological point of view, Level 1 relations are normally not used in defining axioms. There is also a tendency to assert level 1 relations between classes `Insulin stimulates Receptor´
+In many ontologies level 1 relations are expressed as classes, e.g. `Phosphorylation´, `Authoring´...
+
+
+
+
+ * LEVEL 2) relations are those which are generic, ontological relations that are accessible for widespread usage (e.g. ‘is located in’), and 
+
  * LEVEL 3) Relations that are refinements of Level 2 relations, which can normally be fully defined.  
 
 Level 2 would be such that levels 1 and 3 can contain subrelation (or chained relations) of 2.  
