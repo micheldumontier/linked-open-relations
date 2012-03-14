@@ -16,9 +16,9 @@ Create a domain independent standard for Semantic Web relations
 The objective of lore is to harvest binary predicates and relations that are in use, improve them and organize them from a perspective of scientific Knowledge Management and Formal Ontology. 
 
 LORE is proposing to provide 
-* an orthogonal, domain-independent set of binary relations expressed as a (limited) list of OWL object-properties;
+ * an orthogonal, domain-independent set of binary relations expressed as a (limited) list of OWL object-properties;
 
-* a characterization of each relation in terms of meaning, scope restrictions, algebraic properties; 
+ * a characterization of each relation in terms of meaning, scope restrictions, algebraic properties; 
 
 * practices for creating and transforming predicate-like relations from the semantic Web that are not within this list.
 
