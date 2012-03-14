@@ -1,10 +1,8 @@
-#summary One-sentence summary of this page.
+#summary Informational relations
 
 = Introduction =
 
-Characteristic information relation
-
-_It should be better defined what characteristic information relations are. For instance, whether relations like bearer of (qualities or dispositions) go there. As well as relations of the type realizes or concretizes _
+An information relation is a relation that pertains to information, models and representations. 
 
 = Details =
 
@@ -14,7 +12,7 @@ The relation „denotes“ relates an information entity with some other entity.
 
 *Inverse*: “denoted by”
 
-*Alternative names*: “is about”  
+*Alternative names*: “is about”
 
 *Issues*. 
 The representation of denotation as a binary relation is a simplification. Denotation is time-dependent (see the president example), and it is also dependent on the users. It depends on human conventions such as the meaning of a vocabulary (E.g., in Italian “Monaco” denotes both the country Monaco and the city of Munich). Denotation is frequently not only asserted between individuals but between an individual (the symbol) and a class type. E.g. the word “computer” denotes the class of all computers. Again, this depends on time and conventions, e.g. in German “computer” has always denotes a machine; in English it used to denote “computing professionals” in the past. 
