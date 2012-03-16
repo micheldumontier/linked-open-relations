@@ -8,21 +8,21 @@ As long as these relation are asserted between non-processual (non-temporal) ent
 
 = Spatial relations =
 
-is part of
-has part
+ * is part of
+ * has part
 
-is located in
-is location of
+ * is located in
+ * is location of
 
-is contained in
-contains
+ * is contained in
+ * contains
 
-is directly connected to
+ * is directly connected to
 
-is connected to
+ * is connected to
 
-is before
-is after
+ * is before
+ * is after
 
 
 = Definitions =
