@@ -1,5 +1,4 @@
 #labels Phase-Design
-
 #Spatial relations for LORE.
 
 General comments: we understand "space" in a most general sense. It is not restricted to material objects; it includes all kinds of entities related by spatial predicates that are used in language, including fictional entities, information entities etc. 
@@ -8,6 +7,25 @@ As long as these relation are asserted between non-processual (non-temporal) ent
 
 
 = Spatial relations =
+
+is part of
+has part
+
+is located in
+is location of
+
+is contained in
+contains
+
+is directly connected to
+
+is connected to
+
+is before
+is after
+
+
+= Definitions =
 
 *Name:* is part of 
 
@@ -80,6 +98,22 @@ As long as these relation are asserted between non-processual (non-temporal) ent
 *Algebraic properties:* reflexive, transitive
 
 *Inverse relation: 'contains'
+
+*Alternative names:...
+
+----
+
+*Name:* contains
+
+*Definition:* For entities S and O, it holds that ‘S contains O’, if and only if 1) S and O are within the same spatially dimensioned area, 2) S has an associated container volume defined by the outside borders of S (like a convex envelope, or a convex envelope minus the volume of S) and 3) space occupied by O is part of the space occupied by the associated container volume of S.
+
+*Examples:* a glass contains some water, the Atlantic Ocean contains La Palma. A car that has part a wheel, and therefore is location of that wheel, does not contain the wheel.
+
+*Problems:* the application of ‘is contained in’ depends on the definition of the associated container volume of S. This definition may often be very similar as the definition of the outside borders for ‘is location of’.
+
+*Algebraic properties:* reflexive, transitive
+
+*Inverse relation: 'is contained in'
 
 *Alternative names:...
 
