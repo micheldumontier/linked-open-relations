@@ -19,6 +19,8 @@
 
 *Definition*: when projecting on a 1-dimensional ordered space, x hasDurationDescription y iff the sum of every distinct TimeInstants that are part of x is equal to y in some standard measure. This relation relates TimeIntervals and InformationArtifacts.
 
+----
+
 *Name*: hasDateTimeDescription
 
 *Definition*: when projecting on a 1-dimensional ordered space, x hasDateTimeDescription y iff the exact position of x is equal to y in some standard measure. This relation relates TimeInstant and InformationArtifacts.
@@ -30,13 +32,19 @@
 
 *Definition*: when projecting on a 1-dimensional space, x overlapWith y iff there is at least 1 z that is part of both x and y, and z is a TimeInterval
 
+----
+
 *Name*: isTemporallyAdjacentTo
 
 *Definition*: when projecting on a 1-dimensional space, x isTemporallyAdjacentTo y iff there is at least 1 z that is part of both x and y, and z is a TimeInstant
 
+----
+
 *Name*: hasBeginning
 
 *Definition*: when projecting on a 1-dimensional space, x hasBeginning y iff ForAll x, y, z; TemporalInterval(x) AND TemporalInstant(y) AND TemporalInstant(z) AND isTemporalPartOf (y,x) AND isTemporalPartOf(z,x) AND y ≠ z AND precedes(y, z)
+
+----
 
 *Name*: #time-owl/IntervalDuring
 
