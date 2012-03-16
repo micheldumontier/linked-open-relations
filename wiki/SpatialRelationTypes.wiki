@@ -1,5 +1,5 @@
 #labels Phase-Design
-#Spatial relation types for LORE.
+#Spatial relations for LORE.
 
 General comments: we understand "space" in a most general sense. It is not restricted to material objects; it includes all kinds of entities related by spatial predicates that are used in language, including fictional entities, information entities etc. 
 
@@ -134,5 +134,3 @@ According to the characteristics of the network, entities can be connected to th
 *Problems:* The definition of the defined order may depend on a specific context, like in the trip from Paris to London. 
 
 *Algebraic properties:* transitive, inverse relation: is before
-
-
