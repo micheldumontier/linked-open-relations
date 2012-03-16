@@ -13,6 +13,8 @@
 
 *Definition*: when projecting on a 1-dimensional space, x isTemporalPartOf y iff all parts of x are parts of y. That is, every point belonging to x maps to a linear coordinate comprised by y.
 
+----
+
 *Name*: hasDurationDescription
 
 *Definition*: when projecting on a 1-dimensional ordered space, x hasDurationDescription y iff the sum of every distinct TimeInstants that are part of x is equal to y in some standard measure. This relation relates TimeIntervals and InformationArtifacts.
