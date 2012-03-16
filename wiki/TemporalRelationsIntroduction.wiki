@@ -3,7 +3,7 @@
 = Preliminary summary of relations =
 ===Third level canonical relations===
 
-*Name*: precedes
+*Name*: precedes 
 
 *Definition*: when projecting on a 1-dimensional ordered space, x precedes y iff all parts of x are on the left of any TimeInstant that isPartOf y.
 
