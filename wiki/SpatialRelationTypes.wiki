@@ -1,40 +1,41 @@
 #labels Phase-Design
+
 #Spatial relations for LORE.
 
 General comments: we understand "space" in a most general sense. It is not restricted to material objects; it includes all kinds of entities related by spatial predicates that are used in language, including fictional entities, information entities etc. 
 
-As long as these relation are asserted between non-processual (non-temporal) entities they are time-related. This is not made explicit in a binary Subject-Predicate-Object representation. The truth value of an expression like S ‘is a part of’ O may be TRUE at t1 and FALSE at t2
+As long as these relation are asserted between non-processual (non-temporal) entities they are time-related. This is not made explicit in a binary Subject-Predicate-Object representation. The truth value of an expression like S ‘is part of’ O may be TRUE at t1 and FALSE at t2
 
 
-= Spatial relation types =
+= Spatial relations =
 
-*Name:* is a part of 
+*Name:* is part of 
 
-*Definition:* For individual entities S and O, it holds that ‘S is a part of O’, if and only if 1) S and O are within the same mereologically dimensioned area (like space, time, space-time, or any ordered space including abstract space like in information entities), 2) the space occupied by S, is a part of the space occupied by O.  
+*Definition:* For individual entities S and O, it holds that ‘S is part of O’, if and only if 1) S and O are within the same mereologically dimensioned area (like space, time, space-time, or any ordered space including abstract space like in information entities), 2) the space occupied by S, is part of the space occupied by O.  
 
-*Examples:* Crete is a part of Europe, this morning is a part of today, my skin is a part of my body, this third chapter is a part of this book.
+*Examples:* Crete is part of Europe, this morning is part of today, my skin is part of my body, this third chapter is part of this book.
 
 *Problems:* 
-#‘is a part of’ has a broader application compared to other mereological relation types like ‘is located in’, since it is also used for time. It is still left open whether we will distinguish this temporal meaning of ‘is a part of’ by a different name.  
-#‘is a part of’ in ordinary speech is often understood to exclude reflexivity
+#‘is part of’ has a broader application compared to other mereological relation types like ‘is located in’, since it is also used for time. It is still left open whether we will distinguish this temporal meaning of ‘is part of’ by a different name.  
+#‘is part of’ in ordinary speech is often understood to exclude reflexivity
 
-*Algebraic properties:* reflexive, transitive, Rule: if S is a part of O and O is a spatial entity, then S is located in O, Inverse relation: 'has as part'
+*Algebraic properties:* reflexive, transitive, Rule: if S is part of O and O is a spatial entity, then S is located in O, Inverse relation: 'has part'
 
 *Alternative names:* is part of, part of
 
 
 ----
-*Name:* has as part 
+*Name:* has part 
 
-*Definition:* For individual entities S and O, it holds that ‘S has as part O’, if and only if 1) S and O are within the same mereologically dimensioned area (like space, time, space-time, or any ordered space including abstract space like in information entities), 2) the space occupied by O, is a part of the space occupied by S.  
+*Definition:* For individual entities S and O, it holds that ‘S has part O’, if and only if 1) S and O are within the same mereologically dimensioned area (like space, time, space-time, or any ordered space including abstract space like in information entities), 2) the space occupied by O, is part of the space occupied by S.  
 
-*Examples:* Europe has as part Crete, today has as part this morning, my body has as part my skin, this book has as part this third chapter.
+*Examples:* Europe has part Crete, today has part this morning, my body has part my skin, this book has part this third chapter.
 
 *Problems:* 
-#‘has as part’ has a broader application compared to other mereological relation types like ‘is a location of’, since it is also used for time. It is still left open whether we will distinguish this temporal meaning of ‘has as part’ by a different name.  
-#‘has as part’ in ordinary speech is often understood to exclude reflexivity
+#‘has part’ has a broader application compared to other mereological relation types like ‘is location of’, since it is also used for time. It is still left open whether we will distinguish this temporal meaning of ‘has part’ by a different name.  
+#‘has part’ in ordinary speech is often understood to exclude reflexivity
 
-*Algebraic properties:* reflexive, transitive, Rule: if S has as part O and O is a spatial entity, then S is a location of O, Inverse relation: 'is a part of'
+*Algebraic properties:* reflexive, transitive, Rule: if S has part O and O is a spatial entity, then S is location of O, Inverse relation: 'is part of'
 
 *Alternative names:* has part
 
@@ -42,27 +43,27 @@ As long as these relation are asserted between non-processual (non-temporal) ent
 
 *Name:* is located in
 
-*Definition:* For particular entities S and O, it holds that ‘S is located in O’, if and only if 1) S and O are within the same spatially dimensioned area, 2) O has a (not necessarily convex) outside border or envelope and 3) the space occupied by S is a part of the space occupied by the outside borders of O. 
+*Definition:* For particular entities S and O, it holds that ‘S is located in O’, if and only if 1) S and O are within the same spatially dimensioned area, 2) O has a (not necessarily convex) outside border or envelope and 3) the space occupied by S is part of the space occupied by the outside borders of O. 
 
 *Examples:* Pete is located in his car, Iceland is located in Europe.
 
 *Problems:* the application of ‘is located in’ depends on the definition of the outside borders of O. If the beaches of La Palma define the outside borders of the Atlantic Ocean, then La Palma is not located in the Atlantic Ocean, otherwise it is. Somewhat counterintuitively, a wheel is located in a car and a chimney is located in a house.
 
-*Algebraic properties:* reflexive, transitive, inverse relation 'is a location of', Rule: if S is a part of O and O is a spatial entity, then S is located in O
+*Algebraic properties:* reflexive, transitive, inverse relation 'is location of', Rule: if S is part of O and O is a spatial entity, then S is located in O
 
 *Alternative names:* is in, has location, has as location, is located by
 
 ----
 
-*Name:* is a location of
+*Name:* is location of
 
-*Definition:* For particular entities S and O, it holds that ‘S is a location of O’, if and only if 1) S and O are within the same spatially dimensioned area, 2) S has a (not necessarily convex) outside border or envelope and 3) the space occupied by O is a part of the space occupied by the outside borders of S. 
+*Definition:* For particular entities S and O, it holds that ‘S is location of O’, if and only if 1) S and O are within the same spatially dimensioned area, 2) S has a (not necessarily convex) outside border or envelope and 3) the space occupied by O is part of the space occupied by the outside borders of S. 
 
-*Examples:* Pete's car is a location of Pete, Europe is a location of Iceland.
+*Examples:* Pete's car is location of Pete, Europe is location of Iceland.
 
-*Problems:* the application of ‘is a location of’ depends on the definition of the outside borders of S. If the beaches of La Palma define the outside borders of the Atlantic Ocean, then the Atlantic Ocean is not a location of La Palma, otherwise it is. Somewhat counterintuitively, a car is a location of a wheel and a house is a location of a chimney.
+*Problems:* the application of ‘is location of’ depends on the definition of the outside borders of S. If the beaches of La Palma define the outside borders of the Atlantic Ocean, then the Atlantic Ocean is not a location of La Palma, otherwise it is. Somewhat counterintuitively, a car is location of a wheel and a house is location of a chimney.
 
-*Algebraic properties:* reflexive, transitive, inverse relation 'is located in', Rule: if S has as part O and O is a spatial entity, then S is a location of O
+*Algebraic properties:* reflexive, transitive, inverse relation 'is located in', Rule: if S has part O and O is a spatial entity, then S is location of O
 
 *Alternative names:* locates
 
@@ -70,7 +71,7 @@ As long as these relation are asserted between non-processual (non-temporal) ent
 
 *Name:* is contained in
 
-*Definition:* For entities S and O, it holds that ‘S is contained in O’, if and only if 1) S and O are within the same spatially dimensioned area, 2) O has an associated container volume defined by the outside borders of O (like a convex envelope, or a convex envelope minus the volume of O) and 3) space occupied by S is a part of the space occupied by the associated container volume of O.
+*Definition:* For entities S and O, it holds that ‘S is contained in O’, if and only if 1) S and O are within the same spatially dimensioned area, 2) O has an associated container volume defined by the outside borders of O (like a convex envelope, or a convex envelope minus the volume of O) and 3) space occupied by S is part of the space occupied by the associated container volume of O.
 
 *Examples:* some water is contained in a glass, La Palma is contained in the Atlantic Ocean. A wheel that is part of a car, and therefore located in that car, is not contained in the car.
 
