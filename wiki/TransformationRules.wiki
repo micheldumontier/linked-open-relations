@@ -1,0 +1,34 @@
+# Rules for transforming level 1 relations towards higher levels
+
+
+An example of an expansion of a triple that expresses a disposition at the class-level:
+{{{
+ water *boiling-point* 100C
+ <=>
+ water *rdfs:subClassOf* substance
+ 100 C *rdfs:subClassOf* quality
+ water *rdfs:subClassOf* substance#12345
+ substance#12345 *owl:onProperty* boils-at
+ substance#12345 *owl:someValuesFrom* 100C
+ <=>
+ water *rdfs:subClassOf* substance
+ 100 C *rdfs:subClassOf* quality
+ water *rdfs:subClassOf* substance#65476
+ substance#65476 *owl:onProperty* has-disposition 
+ substance#65476 *owl:someValuesFrom* boiling-disposition#345846
+ boiling-disposition#345846 *rdfs:subClassOf* disposition
+ boiling-disposition#345846 *owl:equivalentClass* realisable#678453
+ realisable#678453 *owl:onProperty* is-realized-in 
+ realisable#678453 *owl:someValuesFrom* boiling-process#648766 
+ boiling-process#648766 *rdfs:subClassOf* process
+ boiling-process#648766 *owl:intersectionOf* bnode#245887  
+ bnode#245887 rdf:first water-process#78974
+ water-process#78974 *owl:onProperty* has-participant
+ water-process#78974 owl:someValuesFrom water 
+ bnode#245887 rdf:rest bnode#478751
+ bnode#478751 rdf:first 100C-process#35468
+ 100C-process#35468 *owl:onProperty* has-participant
+ 100C-process#35468 owl:someValuesFrom 100C 
+ bnode#478751 rdf:rest rdf:nil
+}}}
+
