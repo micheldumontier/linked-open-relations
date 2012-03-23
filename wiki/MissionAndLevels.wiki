@@ -56,13 +56,13 @@ These relations are ontological in a strict sense. They have the following chara
 
  * They can be used for expressing core entity attributes as necessary conditions by universal quantification.
 
- * Despite their universal applicability they are often seldomly used in triple stores
+ * Despite their universal applicability they are seldomly used in triple stores
 
  * Reasoner - friendly, but also SPARQL
  
 
 ===LEVEL 3=== 
-These relations that are refinements of Level 2 relations. 
+These relations are refinements of Level 2 relations. 
 Characteristics:
 
  * They can be fully defined.
@@ -86,37 +86,38 @@ Rules are an important means for transforming between relation expressions. The 
 
 {{{
  France *has-province* Bretagne
- Bretagne *rdf:type* Province 
  <=>
  France *has-part* Bretagne
+ Bretagne *rdf:type* Province 
+
 }}}
 
 The rule could be abstracted as 
    
 {{{
  (?X *has-province* ?Y) 
- (?Y *rdf:type* Province) 
-  <=>
+ <=>
  (?X *has-part* ?Y)
+ (?Y *rdf:type* Province)
 }}}
 
 The next rule example applies to the transformation between level 1 and 2
 
 {{{
- Mozart *composer-of* Magic Flute
+ Mozart *is-composer-of* Magic Flute
  <=>
- Composing#238742 *has-type* Composing
+ Composing#238742 *rdf:type* Composing
  Composing#238742 *has-agent* Mozart
  Composing#238742 *has-target* Magic Flute
 }}}
 
 using a rule like
 {{{
- ?a *composer-of* ?b
+ ?a *is-composer-of* ?b
  <=>
- ?c *has-type* Composing
- ?c *has-agent* ?a
- ?c *has-target* ?b 
+ _c *rdf:type* Composing
+ _c *has-agent* ?a
+ _c *has-target* ?b 
 }}}
 
   
