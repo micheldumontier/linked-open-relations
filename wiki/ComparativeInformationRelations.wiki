@@ -10,9 +10,17 @@ Comparative relations relate two individuals with regard to the same quality of 
 
   * Possibly, some of the information relations are (ternary) comparative: has_rank  is comparative. One can have only have a rank in comparison to other individuals (so this is the assignment of a number depending on the comparison)???
 
-= Details =
+ * in relation to -> indicates the reference object
+ * with optional qualifier -> increased, decreased, etc
+ * with optional attribute -> part, quality, etc
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+= Examples =
+
+* 'is similar to'
+* 'is different from'
+* 'has high plasma membrane amount'
+* 'has high plasma membrane part'
+* 'has low plasma membrane amount'
+* 'has low plasma membrane part'
+
+ 
