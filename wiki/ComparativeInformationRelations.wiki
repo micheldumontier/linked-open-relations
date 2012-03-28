@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary compare individuals with regard to a quality
 
 = Introduction =
 
