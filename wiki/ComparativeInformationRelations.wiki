@@ -8,9 +8,9 @@ Comparative relations relate two individuals with regard to the same quality of 
 
 = Components =
 
-  * in relation to -> indicates the reference object
-  * with optional qualifier -> increased, decreased, etc
-  * with optional attribute -> part, quality, etc
+  * in relation to -> indicates the reference object / part / quality
+  * has qualifier -> increased, decreased, etc
+
 
 = Questions =
 
