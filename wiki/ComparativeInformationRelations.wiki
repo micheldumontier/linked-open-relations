@@ -6,7 +6,7 @@
 
 Comparative relations relate two individuals with regard to the same quality of these individuals without assigning a quantity for the level of difference/ congruence towards it. They can either represent the equality of individuals with regard to this quality or their difference. Difference can be further qualified as either increased or decreased (changed into a certain direction) if there is a normative system for the quality in question.
 
-== Comparison
+== Comparison ==
  * equality vs. inequality
  * quality of distinction (color, tone)
  * direction of difference (ordering)
