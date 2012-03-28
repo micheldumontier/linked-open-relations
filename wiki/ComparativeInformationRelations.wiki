@@ -2,9 +2,13 @@
 
 = Introduction =
 
+ /Preliminary/
 
+Comparative relations relate two individuals with regard to the same quality of these individuals without assigning a quantity for the level of difference/ congruence towards it. They can either represent the equality of individuals with regard to this quality or their difference. Difference can be further qualified as either increased or decreased if there is a normative system for the quality in question.
 
-To do (Martin)
+= Questions =
+
+  * Possibly, some of the information relations are (ternery) comparative: has_rank  is comparative. One can have only have a rank in comparison to other individuals (so this is the assignment of a number depending on the comparison)???
 
 = Details =
 
