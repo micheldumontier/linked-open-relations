@@ -11,7 +11,7 @@ Comparative relations relate two individuals with regard to the same quality of 
  * quality of distinction (color, tone)
  * direction of difference (ordering)
  * (absolute) size of difference (magnitude, scale)
- * algebraic properties of differences (ratio is meaningful, scale) [e.g. relative risk, odds ratio]
+ * algebraic properties of differences (ratio is meaningful, scale, inversity, symmetry, reflexivity?, transitivity?)
  * intended precision of similarity (explicit vagueness)
  * relational system specified (normative element(s) stated)
  * etc.
