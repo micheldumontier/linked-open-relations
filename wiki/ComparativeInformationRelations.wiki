@@ -21,7 +21,6 @@ Comparative relations relate two individuals with regard to the same quality of 
   * in relation to -> indicates the reference object / part / quality
   * has qualifier -> increased, decreased, etc
 
-
 = Questions =
 
   * Possibly, some of the information relations are (ternary) comparative: has_rank  is comparative. One can have only have a rank in comparison to other individuals (so this is the assignment of a number depending on the comparison)???
@@ -32,5 +31,28 @@ Comparative relations relate two individuals with regard to the same quality of 
   * 'is different from'
   * 'has high plasma membrane amount' / 'has low plasma membrane part'
   * 'has high plasma membrane part' / 'has low plasma membrane amount' 
+
+= Ternary relation model =
+
+An RDF-expressible ternary model is proposed:
+Consider two comparanda C1 and C2, which are particulars that are compared. Consider a particular quality Q1.
+
+E.g. C1 and C2 are stars. Q1 is brightness magnitude.
+  * C1 is decreased in magnitude relative to C2
+
+<=>
+
+  * 'is decreased in magnitude relative to' rdfs:subPropertyOf 'is before'
+  * C1 'is before' C2
+  * C1 'participates in' _comparison654231
+  * 'is before' 'participates in' _comparison654231
+  * C2 'participates in' _comparison654231
+  * _comparison654231 'is bearer of' magnitude_quality_Q1
+
+
+
+
+
+
 
  
