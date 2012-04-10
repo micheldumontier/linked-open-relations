@@ -2,6 +2,17 @@
 
 = Discussion items for the next teleconference =
 
+== Wednesday 11 April 4 pm CET through Google hangout ==
+
+=== Planned topics ===
+
+- action relations
+
+- informational relation
+
+- rules in LORE?
+
+
 == Wednesday 14 March 4 pm CET through Google hangout ==
 
 === Planned topics ===
