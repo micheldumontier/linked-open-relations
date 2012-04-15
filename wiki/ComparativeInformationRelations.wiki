@@ -1,4 +1,4 @@
-#summary compare individuals with regard to a quality
+#summary compare particulars with regard to their quality values
 
 = Introduction =
 
