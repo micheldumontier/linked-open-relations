@@ -74,9 +74,12 @@ Comparative relations relate two individuals with regard to quality values of th
 = Details =
 
  * numerical comparison: comp(n, m)
-   n, m numbers on nomial, ordinal, ration, interval scales
-   comp is one of:
-   equals, unequals for all scale types of n, m with n=m for equals
+   n, m numbers on nomial, ordinal, ratio, interval scales
+   
+   *comp* is one of:
+   
+   *equals, unequals* for all scale types of n, m with n=m for equals
+   
    unequals is on of larger than/ smaller than for n, m on ordinal scale and higher
  
 
