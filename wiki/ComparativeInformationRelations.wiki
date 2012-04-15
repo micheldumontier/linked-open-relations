@@ -74,16 +74,17 @@ Comparative relations relate two individuals with regard to quality values of th
 = Details =
 
  * numerical comparison: _compn_(m, n)
-   m, n are numbers on nomial, ordinal, interval, ratio scales. _compn_ is one of: _equals, unequals_ for all scale types of n, m with m=n for _equals_ and m!=n for _unequals_. unequals is on of _larger than/ smaller than_ for m, n on ordinal, inverall and ratio scales with m>n for _larger than_ and m<n for _smaller than_. _difference of_ is defined as quantification of inequality for intervall and ratio scales as |m-n| (and as _rank difference_ for ordinal scales), _ratio of_ is only defined for ratio scales as m/n.
+   m, n are numbers on nomial, ordinal, interval, ratio scales. _compn_ is one of: _equalsn, unequalsn_ for all scale types of m, n with m=n for _equalsn_ and m!=n for _unequalsn_. _unequalsn_ is on of _larger thann/ smaller thann_ for m, n on ordinal, inverall and ratio scales with m>n for _larger thann_ and m<n for _smaller thann_. _difference ofn_ is defined as quantification of inequality for intervall and ratio scales as |m-n| (and as _rank difference ofn_ for ordinal scales), _ratio ofn_ is only defined for ratio scales as m/n.
  * numerical comparison: _compn_(m, n, i)
-   _similarity_ is defined as _smaller than_(_difference_(n, m), i) with n, m on ordinal, intervall and ration scales and i an intervall width on ordinal, intervall and ratio scales.
+   _similarityn_ is defined as _smaller thann_(_differencen_(n, m), i) with n, m on ordinal, intervall and ration scales and i an intervall width > 0 on ordinal, intervall and ratio scales. With i=0 (not given) _comp_(m, n)
  
 
  * generic comparison: _comp_(a, b, qa, qb, m, n, i)
-   For entities a, b of generic type with qualities qa, qb having values (or regions) m of qa and n of qb, the following _comp_ relations can be defined:
-
+   For entities a, b of generic type with qualities qa, qb having values (or regions) m of qa and n of qb, the following _comp_ relations can be defined: _comp_(a, b, qa, qb, m, n, i) -> _compn_(m, n, i) for all comparisons on numeric values m, n, i (names of the relations of _compn_ without postfix "n"). For comparisons on qualities with discrete qualitative values either a transformation on ordinal numerical scale is sufficient. Or the two relations _equals_ and _similars_ must be defined in term of the specific qualities and their respective values.
+ 
  * generic comparison with triangulation: _comp_(a, b, qa, qb, m, n, c, qc, p, i)
-   For entities, qualities and values (regions) as above the generic reference entity c with quality qc and its value p, the following _comp_ relations can be defined: 
+   [Don't know if we should follow this] For entities, qualities and values (regions) as above the generic reference entity c with quality qc and its value p, the following _comp_ relations can be defined: 
+ _onesided_ (_larger thann_(m, p) AND larger thann_(n, p) OR _smaller thann(m, p) AND _smaller thann_(n, p)), _twosided_(NOT _onesided_), _residual diff_(_differencen_(_differencen_(m,p), _differencen_(n, p)), residual ratio_ (_ration_(_differencen_(m,p), _differencen_(n, p))
 
 
 
