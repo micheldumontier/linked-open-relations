@@ -1,16 +1,90 @@
 #summary compare individuals with regard to a quality
 
-= Comparative Information relations =
-
-
-
 = Introduction =
 
  _preliminary_
 
-Comparative relations relate two individuals with regard to the same quality of these individuals without assigning a quantity for the level of difference/ congruence towards it. They can either represent the equality of individuals with regard to this quality or their difference. Difference can be further qualified as either increased or decreased (changed into a certain direction) if there is a normative system for the quality in question.
+Comparative relations relate two individuals with regard to quality values of these individuals. They can either represent the equality of individuals with regard to this quality or their difference and further specify this inequality.
 
-== Comparison ==
+
+= Comparative Information relations =
+
+*Name:* equals
+
+*Definition:* 
+
+*Examples:* 
+
+*Issues:* 
+
+*Algebraic properties:* 
+
+*Rule:*
+
+----
+
+*Name:* unequals/ different from
+
+*Definition:* 
+
+*Examples:* 
+
+*Issues:* 
+
+*Algebraic properties:* 
+
+*Rule:*
+
+----
+
+
+*Name:* similars/ similar to
+
+*Superrelation:* unequals
+
+*Definition:* 
+
+*Examples:* 
+
+*Issues:* 
+
+*Algebraic properties:* 
+
+*Rule:*
+
+----
+
+*Name:* larger than/ smaller than
+
+*Definition:* 
+
+*Examples:* 
+
+*Issues:* 
+
+*Algebraic properties:* 
+
+*Rule:*
+
+= Components =
+
+  * in relation to -> indicates the reference object / part / quality
+  * has qualifier -> increased, decreased, etc.
+
+= Details =
+
+ * numerical comparison: comp(n, m)
+   n, m numbers on nomial, ordinal, ration, interval scales
+   comp is one of:
+   equals, unequals for all scale types of n, m with n=m for equals
+   unequals is on of larger than/ smaller than for n, m on ordinal scale and higher
+ 
+
+ *
+
+
+=== (non exhaustive) list of comparisons ==
+
  * similarity/ equality vs. dissimilarity/ inequality
  * quality of distinction (color, tone)
  * direction of difference (ordering)
@@ -20,10 +94,6 @@ Comparative relations relate two individuals with regard to the same quality of 
  * relational system specified (normative element(s) stated)
  * etc.
 
-= Components =
-
-  * in relation to -> indicates the reference object / part / quality
-  * has qualifier -> increased, decreased, etc
 
 = Questions =
 
