@@ -26,7 +26,7 @@ The main problem is to express *what* exactly is compared, decompose ("map") the
 
 *Name:* unequals/ different from
 
-*Definition:* complement of equals, NOT equals
+*Definition:* 
 
 *Examples:* 
 
