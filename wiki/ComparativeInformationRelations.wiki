@@ -1,5 +1,9 @@
 #summary compare individuals with regard to a quality
 
+= Comparative Information relations =
+
+
+
 = Introduction =
 
  _preliminary_
