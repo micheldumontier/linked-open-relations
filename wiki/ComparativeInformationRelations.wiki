@@ -12,13 +12,13 @@ The main problem is to express *what* exactly is compared, decompose ("map") the
 
 *Name:* equals
 
-*Definition:* 
+*Definition:* for now, see details
 
 *Examples:* 
 
-*Issues:* 
+*Issues:* for discrete qualitative values the equality criterion must be known
 
-*Algebraic properties:* 
+*Algebraic properties:* transitive, reflexive, symmetric
 
 *Rule:*
 
@@ -26,13 +26,13 @@ The main problem is to express *what* exactly is compared, decompose ("map") the
 
 *Name:* unequals/ different from
 
-*Definition:* inverse of equals
+*Definition:* complement of equals, NOT equals
 
 *Examples:* 
 
 *Issues:* 
 
-*Algebraic properties:* 
+*Algebraic properties:* intransitive, ireflexive, symmetric 
 
 *Rule:*
 
@@ -49,21 +49,24 @@ The main problem is to express *what* exactly is compared, decompose ("map") the
 
 *Issues:* 
 
-*Algebraic properties:* 
+*Algebraic properties:* intransitive, reflexive, symmetric
 
 *Rule:*
 
 ----
 
 *Name:* larger than/ smaller than
+*Superrelation:* unequals
 
 *Definition:* 
+
+*Synonyms:* dependent on the quality, e.g. before/ after (timepoints), shorter/ longer (durations), etc... (can be Subrelations dependent on domain [if we can define domains])
 
 *Examples:* 
 
 *Issues:* 
 
-*Algebraic properties:* 
+*Algebraic properties:* transitive, irreflexive, asymmetric
 
 *Rule:*
 
