@@ -91,10 +91,10 @@ The main problem is to express *what* exactly is compared, decompose ("map") the
    [Don't know if we should follow this] For particulars, qualities and values (regions) as above the generic reference particular c with quality qc and its value p, the following _comp_ relations can be defined: 
  _onesided_ (_larger thann_(m, p) AND _larger thann_(n, p) OR _smaller thann_(m, p) AND _smaller thann_(n, p)), _twosided_(NOT _onesided_), _residual diff_(_differencen_(_differencen_(m,p), _differencen_(n, p)), residual ratio_ (_ration_(_differencen_(m,p), _differencen_(n, p))
 
-=== (non exhaustive) list of comparisons ==
+=== (non exhaustive) list of what should be covered by comparational relations ==
 
  * similarity/ equality vs. dissimilarity/ inequality
- * quality of distinction (color, tone)
+ (* quality of distinction (color, tone))
  * direction of difference (ordering)
  * (absolute) size of difference (magnitude, scale)
  * algebraic properties of differences (ratio is meaningful, scale, inversity, symmetry, reflexivity?, transitivity?)
