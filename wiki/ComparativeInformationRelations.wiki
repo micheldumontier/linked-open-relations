@@ -77,6 +77,14 @@ The main problem is to express *what* exactly is compared, decompose ("map") the
 
 = Details =
 
+A prototypic n-ary comparative relation could be modelled as a re-ified comparison entity with two (ordered) "ingoing" values, one optional upper bound of an tolerance interval, one qualitative quality and an optional quantitative quality (for the exact meaning of the parameters and qualities see below). To _directly_ "associate" the ingoing values and of the compared entities is a shortcut for convinience (Can we directly use "values" in an information object?). See the proposal for a ternery process model of comparison for a probably more correct ontological representation from Ward below (then change the direction of the two left branches with compared entities and apply "participation", but gain deeper indirection).
+
+<img src="http://www.greeninghealthcare.org/DAV/datadir/obeo/comparison.png"/ width="80%">
+
+Now de-ify comparison, and arrive at a set of sound binary comparative relations :-) . First proposal for reduction:
+
+==== functional "definitions" ====
+
  * numerical comparison: _compn_(m, n)
    m, n are numbers on nomial, ordinal, interval, ratio scales. _compn_ is one of: _equalsn, unequalsn_ for all scale types of m, n with m=n for _equalsn_ and m!=n for _unequalsn_. _unequalsn_ is on of _larger thann/ smaller thann_ for m, n on ordinal, inverall and ratio scales with m>n for _larger thann_ and m<n for _smaller thann_. _difference ofn_ is defined as quantification of inequality for intervall and ratio scales as |m-n| (and as _rank difference ofn_ for ordinal scales), _ratio ofn_ is only defined for ratio scales as m/n.
 
