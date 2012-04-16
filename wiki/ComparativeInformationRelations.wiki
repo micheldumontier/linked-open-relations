@@ -4,9 +4,9 @@
 
 Comparative relations compare two particulars with regard to qualities and their respective quality values. They can either represent the equality of individuals with regard to these values or their difference and further specify this inequality.
 
-A generic comparative relation is _comp_(a, b, qa, qb, m, n, i=0) with a, b particulars with their associated qualities qa, qb and their values m of qa and n of qb, i is the upper limit of a "similarity-tolerance interval" (if not given it is 0). Even the qualities need not to be of the exactly same type (e.g. _wider than high_(table_1, door_1))
+A generic comparative relation is _comp_(a, b, qa, qb, m, n, i=0) with a, b particulars with their associated qualities qa, qb and their values m of qa and n of qb, i is the upper limit of a "similarity-tolerance interval" (if not given it is 0). 
 
-The main problem is to express *what* exactly is compared, decompose ("map") the n-ary relational parts to associated components in a structured and reproducible way(_has qualifier_, _has value_, _related to_) and specify meaningful names.
+The main problem remains to state in the descriptions of relations *what* exactly is compared, how the n-ary relational parts are decompose ("mapped") to associated components in a structured and reproducible way(_has qualifier_, _has value_, _related to_) and to specify meaningful names.
 
 = Comparative Information relations =
 
