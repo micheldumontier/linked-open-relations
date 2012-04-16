@@ -81,7 +81,11 @@ A prototypic n-ary comparative relation could be modelled as a re-ified comparis
 
 <img src="http://www.greeninghealthcare.org/DAV/datadir/obeo/comparison.png"/ width="80%">
 
-Now de-ify comparison, and arrive at a set of sound binary comparative relations :-) . First proposal for reduction:
+Now reduce, flatten and distort this model and arrive at a pragmatic working model under the following assumptions. We are only interested in the same quality of the two compared objects. The original values are already compared and the results are known as qualitative value (set of values is given, names of "smaller/ larger" can change for different qualities, e.g. "earlier/ later", "before/ after") and were applicable as measurement. Vagueness/ tolerance of comparison can be specified (results in equal/ similar/ different).
+
+<img src="http://www.greeninghealthcare.org/DAV/datadir/obeo/comparison_reduced.png"/ width="50%">
+
+Now de-ify _Comparison_, and arrive at a reduced set of sound binary comparative relations :-) . If this "working model" is agreement, we can define a schema how to define binary realtions. E.g. just use the values from _qual_ and define: _equals_, _differs_, _alike_, _smaller_, _larger_ over Thing:a, Thing:b and all sets of qualities were these relations can be meaningful defined either with or without tolerance interval. Or define _before_ and _after_ over Perdurant:a Perdurant:b with Quality:TimePoint. For relations with numerical results or more complex domain and range restrictions components for a re-reification must be defined. For me, it is not so much a problem of definition but of communication to the users. How can we arrive at a description of relations that is easy to comprehend and to apply, covers nearly all interesting cases and is *unambiguous*. 
 
 ==== functional "definitions" ====
 
