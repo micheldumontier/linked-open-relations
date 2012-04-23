@@ -126,22 +126,20 @@ Now de-ify _Comparison_, and arrive at a reduced set of sound binary comparative
   * 'has high plasma membrane amount' / 'has low plasma membrane part'
   * 'has high plasma membrane part' / 'has low plasma membrane amount' 
 
-= n-ary relation model (proposal by Ward) =
+= n-ary relation model in OWL DL (proposal by Ward) =
 
-An RDF-expressible n-ary model is proposed, that can reify binary relation arcs (triples), that use level 1 comparative relations, as relational individual:
+An OWL-expressible n-ary model is proposed, that can reify binary relation arcs (triples), that use level 1 comparative relations, as relational individual:
 
 In general:
-  * subject-individual 'level-1-related-to' object-individual
+  * subject-individual 'is-level-1-compared-to' object-individual
 
 <=>
 
   * subject-individual 'is subject of' relational-individual
-  * 'level-1-related-to' 'is relation of' relational-individual
   * object-individual 'is object of' relational-individual
   * relational-individual rdf:type owl:Thing
   * relational-individual rdf:type comparison
   * comparison rdf:type owl:Class
-
 
 
 Consider two comparanda C1 and C2, which are particulars that are compared. Consider a particular quality Q1.
@@ -149,7 +147,28 @@ Consider two comparanda C1 and C2, which are particulars that are compared. Cons
 E.g. C1 and C2 are stars. Q1 is brightness magnitude.
   * C1 is decreased in magnitude relative to C2
 
+<=>
 
+  * C1 'is subject of' individ_compar_123
+  * C2 'is object of' individ_compar_123
+  * individ_compar_123 rdf:type owl:Thing
+  * individ_compar_123 rdf:type comparison
+  * comparison rdf:type owl:Class
+  * individ_compar_123 rdf:type numerical_comparison
+  * individ_compar_123 rdf:type is_smaller_than_comparison
+  * individ_compar_123 rdf:type ratio_10_intervalled_comparison
+  * individ_compar_123 'is in relation to' Q1
+
+This assumes the introduction of the following binary relations:
+  * is subject of (has subject)   (has subject is functional)
+  * is object of (has object)   (has object is functional)
+  * is in relation to (?) (maybe 'is bearer of'?)
+
+The rest of the n-ary model can be created as classes, which is mostly outside the scope of LORE.
+
+Problem: this n-ary model may be valid OWL DL, but some important expressivity that can be applied to binary relations, cannot be applied to this model. In practical terms: quantification of class level relations: every dwarf star is decreased in magnitude relative to some dwarf star red giant star. Also transitivity, chains and many other interesting things may only be assigned to level-1-relation.
+
+Possible solution: accept those level-1-relations for attaching algebraic properties that work in OWL, but provide LORE for definitions that are stricter than natural language.
 
 
 
