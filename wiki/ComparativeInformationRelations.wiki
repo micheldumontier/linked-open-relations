@@ -126,22 +126,29 @@ Now de-ify _Comparison_, and arrive at a reduced set of sound binary comparative
   * 'has high plasma membrane amount' / 'has low plasma membrane part'
   * 'has high plasma membrane part' / 'has low plasma membrane amount' 
 
-= Ternary relation model =
+= n-ary relation model (proposal by Ward) =
 
-An RDF-expressible ternary model is proposed:
+An RDF-expressible n-ary model is proposed, that can reify binary relation arcs (triples), that use level 1 comparative relations, as relational individual:
+
+In general:
+  * subject-individual 'level-1-related-to' object-individual
+
+<=>
+
+  * subject-individual 'is subject of' relational-individual
+  * 'level-1-related-to' 'is relation of' relational-individual
+  * object-individual 'is object of' relational-individual
+  * relational-individual rdf:type owl:Thing
+  * relational-individual rdf:type comparison
+  * comparison rdf:type owl:Class
+
+
+
 Consider two comparanda C1 and C2, which are particulars that are compared. Consider a particular quality Q1.
 
 E.g. C1 and C2 are stars. Q1 is brightness magnitude.
   * C1 is decreased in magnitude relative to C2
 
-<=>
-
-  * 'is decreased in magnitude relative to' rdfs:subPropertyOf 'is before'
-  * C1 'is before' C2
-  * C1 'participates in' _comparison654231
-  * 'is before' 'participates in' _comparison654231
-  * C2 'participates in' _comparison654231
-  * _comparison654231 'is bearer of' magnitude_quality_Q1
 
 
 
