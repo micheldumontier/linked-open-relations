@@ -144,7 +144,7 @@ In general:
 
 Consider two comparanda C1 and C2, which are particulars that are compared. Consider a particular quality Q1.
 
-E.g. C1 and C2 are stars. Q1 is brightness magnitude.
+E.g. C1 and C2 are stars (like Alfa Centauri and Sirius). Q1 is brightness magnitude.
   * C1 is decreased in magnitude relative to C2
 
 <=>
@@ -166,7 +166,7 @@ This assumes the introduction of the following binary relations:
 
 The rest of the n-ary model can be created as classes, which is mostly outside the scope of LORE.
 
-Problem: this n-ary model may be valid OWL DL, but some important expressivity that can be applied to binary relations, cannot be applied to this model. In practical terms: quantification of class level relations: every dwarf star is decreased in magnitude relative to some dwarf star red giant star. Also transitivity, chains and many other interesting things may only be assigned to level-1-relation.
+Problem: this n-ary model may be valid OWL DL, but some important expressivity that can be applied to binary relations, cannot be applied to this model. In practical terms: quantification of class level relations: every dwarf star is decreased in magnitude relative to some red giant star. Also transitivity, chains and many other interesting things may only be assigned to level-1-relation.
 
 Possible solution: accept those level-1-relations for attaching algebraic properties that work in OWL, but provide LORE for definitions that are stricter than natural language.
 
