@@ -76,7 +76,7 @@ Characteristics:
 
 LORE provides standard practices and relations for all three levels. Only for level 2 it claims to be exhaustive. Level 2 relations will be expressed as OWL object properties. Level 1 and 3 relations are added as long they are largely domain-independent and considered important by the Semantic Web community. 
 
-LORE will not just replicate popular relations that already have already introduced elsewhere (Dublin Core, FOAF, ...). However, LORE will propose solutions how to transform sets of triples containing level 1 or 3 relations into sets of triples containing level two relations only
+LORE will not just replicate popular relations that already have already introduced elsewhere (Dublin Core, FOAF, ...). However, LORE will propose solutions how to transform sets of triples containing level 1 or 3 relations into sets of triples containing level two relations.
 
 For all levels popular and important examples may be provided.  
 
