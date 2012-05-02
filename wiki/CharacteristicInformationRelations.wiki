@@ -38,6 +38,10 @@ a 'is about' b AND b 'has part' c --> a 'is about' c
 }}}
 seems to hold in many cases, especially in case c is a part of a certain prominence for b
 
+What about the axiom
+{{{
+a 'has abstract part' b AND b 'is about' c  --> a 'is about' c 
+}}}
 
 
 
