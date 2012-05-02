@@ -7,7 +7,7 @@ Information entities are immaterial, but they can exist in material entities suc
 
 = Details =
 
-== *has information part* ==
+== *"has information part"* ==
 
 *inverse*: "is information part of"
 
@@ -23,15 +23,35 @@ This relation is used to describe the mereological setup of information entities
 
 
 
+== *"is about"* ==
+
+The relation "is about" is the most general link between an information entity and some other entity.  
+
+Example: Picasso's painting "Guernica" is about war, but more specifically about a war-related events such as the terror against civilians. It is also about a town, and it is about the inhabitants of that town. My chest X-ray is about my chest, but also about my ribs and my heart, as well as about some disorder, e.g. a broken clavicle.
+
+*Inverse*: ??
+
+*Issues*
+The axiom 
+{{{
+a 'is about' b AND b 'has part' c --> a 'is about' c 
+}}}
+seems to hold in many cases, especially in case c is a part of a certain prominence for b
 
 
-== *denotes* ==
 
-The relation „denotes“ relates an information entity with some other entity.  Example: the string of character “Barack Obama”, denotes the person Barack Obama. The string “The president of the U.S.” denotes him in 2012, but not in 2007. An X-ray image denotes a chest of a certain patient at a certain time. 
 
-*Inverse*: “denoted by”
+== *"denotes"* ==
 
-*Alternative names*: “is about”
+The relation "denotes" is used for connecting a symbol-like information entity with some other entity.  
 
-*Issues*. 
-The representation of denotation as a binary relation is a simplification. Denotation is time-dependent (see the president example), and it is also dependent on the users. It depends on human conventions such as the meaning of a vocabulary (E.g., in Italian “Monaco” denotes both the country Monaco and the city of Munich). Denotation is frequently not only asserted between individuals but between an individual (the symbol) and a class type. E.g. the word “computer” denotes the class of all computers. Again, this depends on time and conventions, e.g. in German “computer” has always denotes a machine; in English it used to denote “computing professionals” in the past. 
+Example: the string of characters "Barack Obama", denotes the person Barack Obama. The string "The president of the U.S." denotes him in 2012, but not in 2007.  
+
+*Inverse*: "denoted by"
+
+*Issues* 
+The representation of denotation as a binary relation is a simplification. Denotation is time-dependent (see the president example), and it is also dependent on the users. It depends on human conventions such as the meaning of a vocabulary (E.g., in Italian "Monaco" denotes both the country Monaco and the city of Munich). Denotation is frequently not only asserted between individuals but between an individual (the symbol) and a class (type). E.g. the word "computer" denotes the class of all computers. Again, this depends on time and conventions, e.g. in German "computer" has always denotes a machine; in English it used to denote "computing professionals" in the past. 
+Dentotation is stricter than aboutness, as it does not expand to entities 
+related to the target entities.
+
+
