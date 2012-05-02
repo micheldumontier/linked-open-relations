@@ -2,9 +2,28 @@
 
 = Introduction =
 
-An information relation is a relation that pertains to information, models and representations. 
+An information relation is a relation that pertains to information, models and representations, summarized as information entities. 
+Information entities are immaterial, but they can exist in material entities such as brains, computer disks, sheets of paper. 
 
 = Details =
+
+*has information part* 
+
+inverse: "is information part of"
+
+This relation is used to describe the mereological setup of information entities. For instance, an abstract is an information part of a scientific paper, an operator is an information part of a mathematical formula, a letter is part of a word, etc. 
+
+Axioms: 
+
+* information entities can only have information entities as parts and are always parts of information entities. 
+
+* "is information part of" and its inverse are reflexive and transitive
+
+* "is information part of" is fully defined as "part of", that has information entities in their domain and range. 
+
+
+
+
 
 *denotes*
 
