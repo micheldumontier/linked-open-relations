@@ -7,25 +7,25 @@ Information entities are immaterial, but they can exist in material entities suc
 
 = Details =
 
-*has information part* 
+== *has information part* ==
 
-inverse: "is information part of"
+*inverse*: "is information part of"
 
 This relation is used to describe the mereological setup of information entities. For instance, an abstract is an information part of a scientific paper, an operator is an information part of a mathematical formula, a letter is part of a word, etc. 
 
-Axioms: 
+*Axioms*: 
 
-* information entities can only have information entities as parts and are always parts of information entities. 
+  * information entities can only have information entities as parts and are always parts of information entities. 
 
-* "is information part of" and its inverse are reflexive and transitive
+  * "is information part of" and its inverse are reflexive and transitive
 
-* "is information part of" is fully defined as "part of", that has information entities in their domain and range. 
-
-
+  * "is information part of" is fully defined as "part of", that has information entities in their domain and range. 
 
 
 
-*denotes*
+
+
+== *denotes* ==
 
 The relation „denotes“ relates an information entity with some other entity.  Example: the string of character “Barack Obama”, denotes the person Barack Obama. The string “The president of the U.S.” denotes him in 2012, but not in 2007. An X-ray image denotes a chest of a certain patient at a certain time. 
 
