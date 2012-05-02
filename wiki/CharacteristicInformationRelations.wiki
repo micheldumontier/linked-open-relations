@@ -49,9 +49,9 @@ Example: the string of characters "Barack Obama", denotes the person Barack Obam
 
 *Inverse*: "denoted by"
 
+*Parent*: "is about"
+
 *Issues* 
 The representation of denotation as a binary relation is a simplification. Denotation is time-dependent (see the president example), and it is also dependent on the users. It depends on human conventions such as the meaning of a vocabulary (E.g., in Italian "Monaco" denotes both the country Monaco and the city of Munich). Denotation is frequently not only asserted between individuals but between an individual (the symbol) and a class (type). E.g. the word "computer" denotes the class of all computers. Again, this depends on time and conventions, e.g. in German "computer" has always denotes a machine; in English it used to denote "computing professionals" in the past. 
 Dentotation is stricter than aboutness, as it does not expand to entities 
 related to the target entities.
-
-
