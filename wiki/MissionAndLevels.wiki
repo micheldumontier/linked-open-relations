@@ -135,4 +135,23 @@ using a rule like
 
 _c being a blank node
 
- 
+More complex example:
+
+Example foaf:maker vs. dc:creator
+
+{{{
+a creator b     ; means has creator
+
+Creating#238742 *rdf:type* Creating
+Creating#238742 *has-agent* b
+Creating#238742  *has-outcome* a 
+
+
+Creating *rdfs:subClassOf* Making
+
+
+(to be continued… this could be a good example to demonstrate how SPARQL querying could be enhanced by LORE: Ward ??) 
+}}}
+
+
+
