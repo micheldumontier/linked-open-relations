@@ -38,7 +38,8 @@ Characteristics of level 1 relations:
 
  * Intuitively understandable
 
- * Most of these relations would better describe the domain if they were n-ary (n > 2)
+ * Most of these relations would better describe the domain if they were n-ary (n > 2). For instance the relation *treats* that could be used in the sense *Dr. X treats Mr. Y*, which however could be refined by something like *Dr. X treats Mr. Y at Hospital Z at 20120101 using Antibiotics*. Or *NEJM hasImpactFactor 24* should be completed by the year.  
+
 
  * possibly ambiguous and context-dependent
 
@@ -51,11 +52,11 @@ Characteristics of level 1 relations:
 ===LEVEL 2=== 
 These relations are ontological in a strict sense. They have the following characteristics: 
 
- * They can be applied across domains (domain-independent)
+ * They can be applied across domains (domain-independent). E.g. the relation agent_of can describe the author of a writing process just as the agent of an infection process. 
 
- * They are generally binary, although time may be a third argument
+ * They are generally binary, although time may be a third argument. For instance, a certain tyre is part of my car now, but it was not last year. 
 
- * They can be used for expressing core entity attributes as necessary conditions by universal quantification.
+ * They can be used in DL axioms that express necessary conditions. Example: part-of is used in the definition of Body part. 
 
  * Despite their universal applicability they are seldomly used in triple stores
 
@@ -66,61 +67,72 @@ These relations are ontological in a strict sense. They have the following chara
 These relations are refinements of Level 2 relations. 
 Characteristics:
 
- * They can be fully defined.
+ * They can be fully defined based on level 2 relations
 
- * are often domain dependent. Example: *has-town* is a level 3 subrelation of *has-part* with a range restricted to "town". 
+ * are often domain dependent. Example: *location-country* is a level 3 subrelation of *has-location* (a level 2 relation) with a range restricted to "country". Or *project-participant* is a refinement of *participant-of* with range of the type _Project_.
 
- * Reasoner friendy
+ * Reasoner friendly
 
 
 ==How LORE addresses the three levels==
 
-LORE provides standard practices and relations for all three levels. Only for level 2 it claims to be exhaustive. Level 2 relations will be expressed as OWL object properties. Level 1 and 3 relations are added as long they are largely domain-independent and considered important by the Semantic Web community. 
+LORE provides standard practices and relations for all three levels. Only for level 2 it claims to be exhaustive. Level 2 relations will be expressed as OWL object properties; and they should be related to relations as used in the formal ontology community. 
 
-LORE will not just replicate popular relations that already have already introduced elsewhere (Dublin Core, FOAF, ...). However, LORE will propose solutions how to transform sets of triples containing level 1 or 3 relations into sets of triples containing level two relations.
+The inclusion level of 1 and 3 relations could easily go out of control. Therefore they are added only as long as they are largely domain-independent and considered important by the Semantic Web community. 
 
-For all levels popular and important examples may be provided.  
+LORE will not just replicate popular relations that have already been introduced elsewhere (Dublin Core, FOAF, ...). However, LORE will propose solutions how to transform sets of triples containing level 1 or 3 relations into sets of triples containing level two relations.
+
+For all levels popular and important examples, together with exemplar transformation rules will be provided.  
 
 == LORE rules ==
 
 Rules are an important means for transforming between relation expressions. The following example instantiates a rule that transforms between level 2 and level 3:
 
-{{{
- France *has-province* Bretagne
- <=>
- France *has-part* Bretagne
- Bretagne *rdf:type* Province 
 
+
+{{{
+ m *has-quality* q <=>
+ m *bearer-of* q
+ q *rdf:type* Quality}}}
+
+
+{{{
+ France *has-province* Brittany
+ <=>
+ France *has-part* Brittany
+ Brittany *rdf:type* Province 
 }}}
 
-The rule could be abstracted as 
+Such rules could be abstracted e.g. 
    
 {{{
- (?X *has-province* ?Y) 
- <=>
- (?X *has-part* ?Y)
- (?Y *rdf:type* Province)
+ (?x *has-A* ?y) 
+  <=>
+ (?x *has-part* ?y)
+ (?y *rdf:type* A)
 }}}
+
+
 
 The next rule example applies to the transformation between level 1 and 2
 
 {{{
- Mozart *is-composer-of* Magic Flute
+ Mozart *music-composer* Magic Flute
  <=>
  Composing#238742 *rdf:type* Composing
  Composing#238742 *has-agent* Mozart
- Composing#238742 *has-target* Magic Flute
+ Composing#238742 *has-outcome* Magic Flute
 }}}
 
 using a rule like
 {{{
- ?a *is-composer-of* ?b
+ ?a *music-composer* ?b
  <=>
  _c *rdf:type* Composing
  _c *has-agent* ?a
  _c *has-target* ?b 
 }}}
 
-  
+_c being a blank node
 
  
