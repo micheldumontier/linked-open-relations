@@ -13,10 +13,10 @@ Stefan Schulz
 Create a domain independent standard for Semantic Web relations
 
 ==Scope==
-The objective of LORE is to create a practical set of relations for use on the Semantic Web. 
+The objective of LORE is to create a set of relations for use on the Semantic Web. 
 
 LORE will provide 
- * an orthogonal, domain-independent set of binary relations expressed as a (limited) list of OWL object-properties;
+ * an orthogonal, domain-independent set of binary relations expressed as a (limited) list of OWL object-properties. However, the use of LORE should be possible without OWL reasoning. (We should also permit some flexibility of using these relations between classes or between terms where there is no clear commitment regarding whether they denote classes or instances.)  
 
  * a characterization of each relation in terms of meaning, scope, algebraic properties; 
 
@@ -25,6 +25,7 @@ LORE will provide
  * continuously evaluate LORE relations and their application 
 
 ==Terminological issues==
+
 There is ambiguous use of terms like "relation", "relationships", "role", "relation type", "relation instance", "relation assertion", "predicate", "predication". In LORE, we will use the term "relation".
 
 ==Three semantic levels==
