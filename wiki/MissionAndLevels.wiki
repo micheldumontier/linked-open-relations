@@ -131,6 +131,7 @@ using a rule like
  _c *rdf:type* Composing
  _c *has-agent* ?a
  _c *has-target* ?b 
+ ?a rdf:type Human
 }}}
 
 _c being a blank node
@@ -152,6 +153,40 @@ Creating *rdfs:subClassOf* Making
 
 (to be continued… this could be a good example to demonstrate how SPARQL querying could be enhanced by LORE: Ward ??) 
 }}}
+
+
+Another example
+
+"specialized data category designation"
+
+This is a very specialized, non self explaining relation from data.gov. 
+In order to reuse data using this relation the user / creator of this relation should do the following:
+
+ # specify the domain and range of the relation
+ # identify a process which represents this relation given domain and range and categorize this process hierarchically, e.g. using WordNet 
+or identifying a LORE relation which is a superrelation of it
+ # create an equivalence rule 
+
+{{{
+a specialized data category designation b      
+
+specialized data category designation *rdfs:subPropertyOf* isAbout
+a *rdf:type* dataset
+b *rdf:type* rdf:resource 
+
+(this is an example without reification) 
+
+
+
+(to be continued… this could be a good example to demonstrate how SPARQL querying could be enhanced by LORE: Ward ??) 
+}}}
+
+
+
+
+
+
+
 
 
 
