@@ -93,7 +93,8 @@ Rules are an important means for transforming between relation expressions. The 
 {{{
  m *has-quality* q <=>
  m *bearer-of* q
- q *rdf:type* Quality}}}
+ q *rdf:type* Quality
+}}}
 
 
 {{{
@@ -142,17 +143,47 @@ Example foaf:maker vs. dc:creator
 
 {{{
 a creator b     ; means has creator
-
+<=>
 Creating#238742 *rdf:type* Creating
 Creating#238742 *has-agent* b
-Creating#238742  *has-outcome* a 
-
-
-Creating *rdfs:subClassOf* Making
-
-
-(to be continued… this could be a good example to demonstrate how SPARQL querying could be enhanced by LORE: Ward ??) 
+Creating#238742  *has-outcome* a
 }}}
+
+Such rules can be expressed with SPARQL/Update:
+
+{{{
+PREFIX dc:     <http://purl.org/dc/elements/1.1/>
+PREFIX LOD:    <http://....>
+PREFIX LORE:   <http://....>
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+INSERT {
+ _:blank_node  rdf:type         LOD:Creating.
+ _:blank_node  LORE:has-agent   ?b.
+ _:blank_node  LORE:has-outcome ?a.
+}
+WHERE {
+ ?a            dc:creator       ?b.
+}
+}}}
+
+Toghether with the inverse rule:
+
+{{{
+PREFIX dc:     <http://purl.org/dc/elements/1.1/>
+PREFIX LOD:    <http://....>
+PREFIX LORE:   <http://....>
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+INSERT {
+ ?a  dc:creator       ?b.
+}
+WHERE {
+ ?x  rdf:type         LOD:Creating.
+ ?x  LORE:has-agent   ?b.
+ ?x  LORE:has-outcome ?a.
+}
+}}}
+
+This creates an RDF model that facilitates more reasoning and generates a higher recall for SPARQL queries.
 
 
 Another example
@@ -180,8 +211,6 @@ b *rdf:type* rdf:resource
 
 (to be continued… this could be a good example to demonstrate how SPARQL querying could be enhanced by LORE: Ward ??) 
 }}}
-
-
 
 
 
