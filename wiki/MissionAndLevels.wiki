@@ -214,6 +214,12 @@ b *rdf:type* rdf:resource
 
 
 
+== Class / Instance Problem :==
+
+Real triplet data in the semantic Web often are uncommited on whether the subjects and / or objects are individuals or classes. Although one can question this from a theoretical point of view one has to accept is as it is and make the best out of it. 
+
+Although LORE relations are, by definition, relations between individuals, strategies should be developed and tested how they can be used to link classes (without OWL typical quantifiers). The overlap between LORE and Metarel [cite!](which provides a typology of relations between all kinds of entities) have to be studied and solutions will be proposed. 
+
 
 
 
