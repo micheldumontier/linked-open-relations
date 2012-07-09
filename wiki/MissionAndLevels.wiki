@@ -1,10 +1,10 @@
 = *LORE - LINKED OPEN RELATIONS*= 
 
 Initiated by: 
-André Andrade
-Ward Blondé
-Martin Boeker
-Michel Dumontier
+André Andrade, 
+Ward Blondé, 
+Martin Boeker, 
+Michel Dumontier, 
 Stefan Schulz
 
 
@@ -211,8 +211,6 @@ b *rdf:type* rdf:resource
 
 (to be continued… this could be a good example to demonstrate how SPARQL querying could be enhanced by LORE: Ward ??) 
 }}}
-
-
 
 
 
