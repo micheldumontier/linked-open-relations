@@ -22,7 +22,7 @@ The main problem remains to state in the descriptions of relations *what* exactl
   * hence, relates a specific quality of two particulars
    * hence, relates two particulars
     * hence, the domain and range are: (value region, quality, particular)/(value region, quality, particular)
-  * *Algebraic properties:* transitive, reflexive, symmetric
+ * *Algebraic properties:* transitive, reflexive, symmetric
 
 *Definition:* The binary relation _equals_ holds iff two compared particulars are "equal". This equality can either be quantitative which is a numerical equality  or qualitative which is the categorial equality of the two particulars.
 
