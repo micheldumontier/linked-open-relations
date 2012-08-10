@@ -100,7 +100,7 @@ The main problem remains to state in the descriptions of relations *what* exactl
 
 == *"alike or equal"/ "larger than or equal"* ==
 
-* have a single section for both of those (later) for their different properties
+* provide a single section of each of these relations
 
 *Complement:* unlike/ "smaller than"
 *Inverse:* none/ "smaller than or equal"
