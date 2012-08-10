@@ -109,9 +109,9 @@ The main problem remains to state in the descriptions of relations *what* exactl
  * as specified for _alike_ and _"larger than"_
  * _alike_ OR _equals_
  * _"larger than"_ OR _equals_
- * *Algebraic properties:* 
-    "alike or equal": intransitive, reflexive, symmetric
-    "larger than or equal": transitive, irreflexive, 
+ * *Algebraic properties:*
+  * "alike or equal": intransitive, reflexive, symmetric
+  * "larger than or equal": transitive, irreflexive, 
     antisymmetric [domain/range: values] or
     asymmetric [domain/range: qualities, particulars]
 
