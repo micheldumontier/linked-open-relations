@@ -2,7 +2,7 @@
 
 = Introduction =
 
-A comparison of a quality of two things results in an information about this comparison which can be assigned to the two compared objects with a binary Comparative Information Relations. These relations assign information (or hold) about the comparison of a quality (precisely their respective quality values) of two particulars. They can either represent the equality of individuals with regard to these values or their difference and further specify this inequality.
+A comparison of a certain quality of two particualrs results in an information about this comparison which can be assigned to the two compared objects with a binary Comparative Information Relation. These relations assign information (or hold) about the comparison of a quality (precisely their respective quality values) of two particulars. They can either represent the equality of individuals with regard to these values or their difference and further specify this inequality.
 
 A generic comparative relation is _comp_(a, b, qa, qb, m, n, i=0) with a, b particulars with their associated qualities qa, qb and their values m of qa and n of qb, i is the upper limit of a "similarity-tolerance interval" (if not given it is 0). 
 
