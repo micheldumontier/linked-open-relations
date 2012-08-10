@@ -10,96 +10,118 @@ The main problem remains to state in the descriptions of relations *what* exactl
 
 = Details =
 
-== *"has information part"* ==
-
-*inverse*: "is information part of"
-
-This relation is used to describe the mereological setup of information entities. For instance, an abstract is an information part of a scientific paper, an operator is an information part of a mathematical formula, a letter is part of a word, etc. 
-
-*Axioms*: 
-
-  * information entities can only have information entities as parts and are always parts of information entities. 
-
 == *equals* ==
 
-*complement*: unequals
+*Complement*: unequals
 
 *Axioms:*
- * specificly, relates the values of qualities of two particulars
-  * hence, relates the quality of two particulars
-   * hence, relates the two particulars
+ * specificly, relates the values of a certain quality of two particulars
+  * hence, relates a specific quality of two particulars
+   * hence, relates two particulars
     * hence, the domain and range are: (value region, quality, particular)/(value region, quality, particular)
- * Algebraic properties:* transitive, reflexive, symmetric
+  * *Algebraic properties:* transitive, reflexive, symmetric
 
-*Definition:* This binary relation holds iff two compared particulars are qualitatively "equal" . This equality can either be quantitative which is a numerical equality  or qualitative which is the categorial equality of the two particulars.
+*Definition:* The binary relation _equals_ holds iff two compared particulars are "equal". This equality can either be quantitative which is a numerical equality  or qualitative which is the categorial equality of the two particulars.
 
 *Examples:* 
  * equals(speed_car1, speed_car2)
  * equals(animal_1, animal_2) => (example which might be well defined in a given local context but must be disambiguated for global use)
 
 *Issues:* 
- * The meaning of comparative results for all of the generic comparative relations of two particulars can be exactly specified for most scale types (see details below) and is only an issue for certain categorial qualities (e.g. color).
- * The _main issue_ of all af these generic comparative relations is disambiguation of _what_ exactly is related to each otherm where not specified:
+ * The meaning of the comparative results for all of these binary generic comparative relations for particulars can be exactly specified for most scale types (see details below) and is only an issue for certain categorial qualities (e.g. color).
+ * The _main issue_ of all af these generic comparative relations is disambiguation of _what_ exactly is related to each otherm where not specified. Hence, the problem is *how* to define the exact *application* and give rules for that:
   * e.g. the quality which is compared when particulars are compared
   * local vs. global (semantic web) use. In a defined local scenario the context may clearly disambigute the related 
 
-
-*Rule:*
-
 ----
 
-*Name:* unequals/ different from
+== *unequals/ "different from"* ==
 
-*Definition:* 
+*Complement*: equals
+
+*Axioms:*
+ * domain/range considerations as for equals
+ * *Algebraic properties:* intransitive, irreflexive, symmetric 
+
+*Definition:* Unequals is the complement of _equals_. The binary relation _unequals_ holds iff two compared particulars are "unequal" or "different".
 
 *Examples:* 
-
-*Issues:* 
-
-*Algebraic properties:* intransitive, ireflexive, symmetric 
-
-*Rule:*
+ * unequals(speed_car1, speed_car2)
+ * unequals(animal_1, animal_2) => (example which might be well defined in a given local context but must be disambiguated for global use)
 
 ----
 
-
-*Name:* alike/ similar to
+== *alike/ "similar to"* ==
 
 *Superrelation:* unequals
 
-*Definition:* 
+*Axioms:*
+ * tolerance intervall/ qualitative tolerance specified
+ * *Algebraic properties:* intransitive, irreflexive (without equality), symmetric
+
+*Definition:* The binary relation _alike_ holds iff two compared particulars are "similar" but not "equal" (or "too different"). The given definition might differ from common sense (or intuitive) usage of "similarity" which often includes "equality". The qualitative or quantitative similarity is usually defined as _unequality_ but "near to equality" with a given deviation (tolerance intervall, qualitative tolerance).
 
 *Examples:* 
+ * alike(speed_car1, speed_car2)
+ * alike(animal_1, animal_2) => (example which might be well defined in a given local context but must be disambiguated for global use)
 
 *Issues:* 
+ * Besides the general considerations above (_equals_) the a further issue is, *how* and *where* to define the assumed tolerance interval which has been applied to derive the result of the comparison.
 
-*Algebraic properties:* intransitive, reflexive, symmetric
-
-*Rule:*
 
 ----
 
-*Name:* larger than/ smaller than
+== *"larger than"* ==
+
 *Superrelation:* unequals
 
-*Definition:* 
+*Inverse:* "smaller than"
+
+*Axioms:*
+ * Only defined for quantities and categorial qualities which can be ordered (-> quanitative quality on ordinal scale)
+ * *Algebraic properties:* transitive, irreflexive, asymmetric
+
+*Definition:* The binary relation _"larger than"_ holds iff two compared particulars are different so that the first particular is "larger" than the second particular. The qualitative or quantitative distance between the particulars is usually defined as numerical or qualitative difference. If this difference between the first and second particular is positive the relation holds for this pair.
+
 
 *Synonyms:* dependent on the quality, e.g. before/ after (timepoints), shorter/ longer (durations), etc... (can be Subrelations dependent on domain [if we can define domains])
 
 *Examples:* 
+ * "larger than"(speed_car1, speed_car2)
+ * "larger than"(animal_1, animal_2) => (example which might be well defined in a given local context but must be disambiguated for global use)
 
 *Issues:* 
+ * For categorial qualities without ordering this relations are not defined.
 
-*Algebraic properties:* transitive, irreflexive, asymmetric
+---
 
-*Rule:*
+== *"alike or equal"/ "larger than or equal"* ==
 
-= Components =
+* have a single section for both of those (later) for their different properties
 
-  * in relation to -> indicates the reference object / part / quality
-  * has qualifier -> increased, decreased, etc.
+*Complement:* unlike/ "smaller than"
+*Inverse:* none/ "smaller than or equal"
 
-= Details =
+*Axioms:*
+ * as specified for _alike_ and _"larger than"_
+ * _alike_ OR _equals_
+ * _"larger than"_ OR _equals_
+ * *Algebraic properties:* 
+    "alike or equal": intransitive, reflexive, symmetric
+    "larger than or equal": transitive, irreflexive, 
+    antisymmetric [domain/range: values] or
+    asymmetric [domain/range: qualities, particulars]
+
+*Definition:* These relations are intuitively defined as the disjunction of the _equals_ relations with on of the unequals relations _alike_ resp. _"larger than"_. They are used frequently but their algebraic properties render their application "dangerous" with the consequence of "unintended meaning". 
+
+--- 
+
+#= Components =
+#
+#  * in relation to -> indicates the reference object / part / quality
+#  * has qualifier -> increased, decreased, etc.
+
+= Background =
 
 A prototypic n-ary comparative relation could be modelled as a re-ified comparison entity related with two (ordered) "ingoing" values, one optional upper bound of an tolerance interval, one qualitative quality and an optional quantitative quality (for the exact meaning of the parameters and qualities see below). To _directly_ "associate" the ingoing values of the compared entities with the comparison is a shortcut for convenience (Can we directly use "values" in an information object?). See the proposal for a ternary process model of comparison for a probably more correct ontological representation from Ward below. (Change in the direction of the two left branches with compared entities and apply "participation", but gain deeper indirection).
 
