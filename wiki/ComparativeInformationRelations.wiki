@@ -8,17 +8,41 @@ A generic comparative relation is _comp_(a, b, qa, qb, m, n, i=0) with a, b part
 
 The main problem remains to state in the descriptions of relations *what* exactly is compared, how the n-ary relational parts are decompose ("mapped") to associated components in a structured and reproducible way(_has qualifier_, _has value_, _related to_) and to specify meaningful names.
 
-= Comparative Information relations =
+= Details =
 
-*Name:* equals
+== *"has information part"* ==
 
-*Definition:* for now, see details
+*inverse*: "is information part of"
+
+This relation is used to describe the mereological setup of information entities. For instance, an abstract is an information part of a scientific paper, an operator is an information part of a mathematical formula, a letter is part of a word, etc. 
+
+*Axioms*: 
+
+  * information entities can only have information entities as parts and are always parts of information entities. 
+
+== *equals* ==
+
+*complement*: unequals
+
+*Axioms:*
+ * specificly, relates the values of qualities of two particulars
+  * hence, relates the quality of two particulars
+   * hence, relates the two particulars
+    * hence, the domain and range are: (value region, quality, particular)/(value region, quality, particular)
+ * Algebraic properties:* transitive, reflexive, symmetric
+
+*Definition:* This binary relation holds iff two compared particulars are qualitatively "equal" . This equality can either be quantitative which is a numerical equality  or qualitative which is the categorial equality of the two particulars.
 
 *Examples:* 
+ * equals(speed_car1, speed_car2)
+ * equals(animal_1, animal_2) => (example which might be well defined in a given local context but must be disambiguated for global use)
 
-*Issues:* for discrete qualitative values the equality criterion must be known
+*Issues:* 
+ * The meaning of comparative results for all of the generic comparative relations of two particulars can be exactly specified for most scale types (see details below) and is only an issue for certain categorial qualities (e.g. color).
+ * The _main issue_ of all af these generic comparative relations is disambiguation of _what_ exactly is related to each otherm where not specified:
+  * e.g. the quality which is compared when particulars are compared
+  * local vs. global (semantic web) use. In a defined local scenario the context may clearly disambigute the related 
 
-*Algebraic properties:* transitive, reflexive, symmetric
 
 *Rule:*
 
