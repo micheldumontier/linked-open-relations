@@ -8,6 +8,9 @@ A generic comparative relation is _comp_(a, b, qa, qb, m, n, i=0) with a, b part
 
 The main problem remains to state in the descriptions of relations *what* exactly is compared, how the n-ary relational parts are decompose ("mapped") to associated components in a structured and reproducible way(_has qualifier_, _has value_, _related to_) and to specify meaningful names.
 
+----
+----
+
 = Details =
 
 == *equals* ==
@@ -93,7 +96,7 @@ The main problem remains to state in the descriptions of relations *what* exactl
 *Issues:* 
  * For categorial qualities without ordering this relations are not defined.
 
----
+----
 
 == *"alike or equal"/ "larger than or equal"* ==
 
@@ -114,7 +117,8 @@ The main problem remains to state in the descriptions of relations *what* exactl
 
 *Definition:* These relations are intuitively defined as the disjunction of the _equals_ relations with on of the unequals relations _alike_ resp. _"larger than"_. They are used frequently but their algebraic properties render their application "dangerous" with the consequence of "unintended meaning". 
 
---- 
+----
+----
 
 #= Components =
 #
