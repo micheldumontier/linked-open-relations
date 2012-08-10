@@ -111,9 +111,7 @@ The main problem remains to state in the descriptions of relations *what* exactl
  * _"larger than"_ OR _equals_
  * *Algebraic properties:*
   * "alike or equal": intransitive, reflexive, symmetric
-  * "larger than or equal": transitive, irreflexive, 
-    antisymmetric [domain/range: values] or
-    asymmetric [domain/range: qualities, particulars]
+  * "larger than or equal": transitive, irreflexive, antisymmetric [domain/range: values] or asymmetric [domain/range: qualities, particulars]
 
 *Definition:* These relations are intuitively defined as the disjunction of the _equals_ relations with on of the unequals relations _alike_ resp. _"larger than"_. They are used frequently but their algebraic properties render their application "dangerous" with the consequence of "unintended meaning". 
 
