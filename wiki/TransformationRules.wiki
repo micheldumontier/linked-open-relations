@@ -1,7 +1,12 @@
 # Rules for transforming level 1 relations towards higher levels
 
 
-An example of an expansion of a triple that expresses a disposition at the class-level:
+The SPARQL Inference Notation (SPIN) and SPARQL/Update (SPARUL) are two recent Semantic Web technologies that can work together for creating rules in RDF and Linked Data. SPARQL makes queries over RDF graphs, SPARUL updates and transforms RDF graphs, whereas SPIN provides an RDF notation for both SPARQL and SPARUL. An RDF store that contains SPIN rules, can therefore update itself automatically.
+
+LORE can use SPIN-expressed SPARUL rules to transform Linked Data from various origins towards Linked Data that contains LORE relations only. The workflow for implementing this architecture implies that Linked Data publishers create a SPARUL rule for each non-LORE relation they have published. This will result in a library of SPIN-expressed SPARUL rules that provides a more solid semantics to the Linked Data, and that may improve query-recall when the rules are actually implemented.
+
+
+An example of an expansion of a triple that expresses a disposition at the class-level in OWL/RDF:
 {{{
  water *boiling-point* 100C
  <=>
@@ -31,4 +36,3 @@ An example of an expansion of a triple that expresses a disposition at the class
  100C-process#35468 owl:someValuesFrom 100C 
  bnode#478751 rdf:rest rdf:nil
 }}}
-
