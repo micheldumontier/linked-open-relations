@@ -6,6 +6,22 @@ The SPARQL Inference Notation (SPIN) and SPARQL/Update (SPARUL) are two recent S
 LORE can use SPIN-expressed SPARUL rules to transform Linked Data from various origins towards Linked Data that contains LORE relations only. The workflow for implementing this architecture implies that Linked Data publishers create a SPARUL rule for each non-LORE relation they have published. This will result in a library of SPIN-expressed SPARUL rules that provides a more solid semantics to the Linked Data, and that may improve query-recall when the rules are actually implemented.
 
 
+Here follows an example of a LORE rule in SPARUL, which defines the IRI my_LOD:part_of in terms of the LORE relation LORE:is-part-of:
+
+{{{
+PREFIX LORE:...
+PREFIX my_LOD:...
+INSERT INTO GRAPH <LORE_only> {
+  ?subject <LORE:is-part-of> ?object.
+}
+WHERE {
+  GRAPH <published_LOD> {
+    ?subject <my_LOD:part_of> ?object.
+  }
+}
+}}}
+
+
 An example of an expansion of a triple that expresses a disposition at the class-level in OWL/RDF:
 {{{
  water *boiling-point* 100C
