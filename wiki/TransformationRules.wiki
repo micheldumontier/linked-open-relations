@@ -22,9 +22,9 @@ An example of an expansion of a triple that expresses a disposition at the class
  substance#65476 *owl:onProperty* has-disposition 
  substance#65476 *owl:someValuesFrom* boiling-disposition#345846
  boiling-disposition#345846 *rdfs:subClassOf* disposition
- boiling-disposition#345846 *owl:equivalentClass* realisable#678453
- realisable#678453 *owl:onProperty* is-realized-in 
- realisable#678453 *owl:someValuesFrom* boiling-process#648766 
+ boiling-disposition#345846 *owl:equivalentClass* realizable#678453
+ realizable#678453 *owl:onProperty* is-realized-in 
+ realizable#678453 *owl:someValuesFrom* boiling-process#648766 
  boiling-process#648766 *rdfs:subClassOf* process
  boiling-process#648766 *owl:intersectionOf* bnode#245887  
  bnode#245887 rdf:first water-process#78974
