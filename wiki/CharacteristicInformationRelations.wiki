@@ -2,7 +2,7 @@
 
 = Introduction =
 
-An information relation is a relation that pertains to information, models and representations, summarized as information entities. 
+An information relation is a relation that pertains to information, models, plans and representations, summarized as information entities. 
 Information entities are immaterial, but they can exist in material entities such as brains, computer disks, sheets of paper. 
 
 = Details =
@@ -21,6 +21,9 @@ This relation is used to describe the mereological setup of information entities
 
   * "is information part of" is fully defined as "part of", that has information entities in their domain and range. 
 
+This relation pair is a level 3 relation because it can be fully defined by the relation pair "is part of" and "has part"
+
+
 
 
 == *"is about"* ==
@@ -36,7 +39,7 @@ The axiom
 {{{
 a 'is about' b AND b 'has part' c --> a 'is about' c 
 }}}
-seems to hold in many cases, especially in case c is a part of a certain prominence for b
+seems to hold in many cases, especially in case c is a part of a certain relevance of salience for b
 
 What about the axiom
 {{{
@@ -56,10 +59,8 @@ Example: the string of characters "Barack Obama", denotes the person Barack Obam
 *Parent*: "is about"
 
 *Issues* 
-The representation of denotation as a binary relation is a simplification. Denotation is time-dependent (see the president example), and it is also dependent on the users. It depends on human conventions such as the meaning of a vocabulary (E.g., in Italian "Monaco" denotes both the country Monaco and the city of Munich). 
+The representation of denotation as a binary relation is a simplification. Denotation is time-dependent (see the president example), and it is also dependent on human conventions such as the meaning of a vocabulary (E.g., in Italian "Monaco" denotes both the country Monaco and the city of Munich). 
 
 Furthermore, denotation is frequently not only asserted between individuals but between an individual (the symbol) and a class (type), or between a symbol and a plan.
 
 For instance, the expressions "Airbus A380" could denote (i) one single individual as well as the type of this airplane. As with most artefacts, types are specified as construction plans, "Airbus A380" could also denotate a construction plan or a visual rendering generated out of it (even before any material instance existed).
-
-
