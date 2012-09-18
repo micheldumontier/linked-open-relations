@@ -16,7 +16,7 @@ Create a domain independent standard for Semantic Web relations
 The objective of LORE is to create a set of relations for use on the Semantic Web. 
 
 LORE will provide 
- * an orthogonal, domain-independent set of binary relations expressed as a (limited) list of OWL object-properties. However, the use of LORE should be possible without OWL reasoning. (We should also permit some flexibility of using these relations between classes or between terms where there is no clear commitment regarding whether they denote classes or instances.)  
+ * an orthogonal, domain-independent set of binary relations expressed as a (limited) list of OWL object properties. Yet, the use of LORE should be possible without OWL reasoning. (We should also permit some flexibility of using these relations between classes or between terms where there is no clear commitment regarding whether they denote classes or instances.)  
 
  * a characterization of each relation in terms of meaning, scope, algebraic properties; 
 
@@ -28,26 +28,25 @@ LORE will provide
 
 There is ambiguous use of terms like "relation", "relationships", "role", "relation type", "relation instance", "relation assertion", "predicate", "predication". In LORE, we will use the term "relation".
 
-==Three semantic levels==
+==Three type of LORE relations ==
 LORE classifies relations as, in a first approximation, distinguished between the following three semantic levels:
 
 ===LEVEL 1===
 Level 1 relations are those drawn from natural language (e.g. *stands in*, *phosphorylizes*, *has-author*)
 
-Characteristics of level 1 relations:
+Characteristics of level 1 relations (also called "material relations"):
 
- * Intuitively understandable
+ * Intuitively understandable. They are mostly directly derived from natural language predicates. 
 
- * Most of these relations would better describe the domain if they were n-ary (n > 2). For instance the relation *treats* that could be used in the sense *Dr. X treats Mr. Y*, which however could be refined by something like *Dr. X treats Mr. Y at Hospital Z at 20120101 using Antibiotics*. Or *NEJM hasImpactFactor 24* should be completed by the year.  
+ * Some of these relations would better describe the domain if they were n-ary (n > 2). For instance the relation *treats* that could be used in the sense *Dr. X treats Mr. Y*, which however could be refined by something like *Dr. X treats Mr. Y at Hospital Z at 20120101 using Antibiotics*. Or *NEJM hasImpactFactor 24* should be completed by the year.  
 
-
- * possibly ambiguous and context-dependent
+ * possibly ambiguous and context-dependent 
 
  * There is also a tendency to assert level 1 relations between classes _Insulin_ *stimulates* _Receptor_
 
  * may be expressed as classes, e.g. _Phosphorylation_, _Authoring_..., in order to express dispositional or procedural knowledge. 
 
- * SPARQL - friendly
+ * They are SPARQL - friendly
 
 ===LEVEL 2=== 
 These relations are ontological in a strict sense. They have the following characteristics: 
@@ -61,6 +60,8 @@ These relations are ontological in a strict sense. They have the following chara
  * Despite their universal applicability they are seldomly used in triple stores
 
  * Reasoner - friendly, but also SPARQL
+
+ * It is difficult and arbitrary to identify and extract a domain-independent set from these relations for LORE.
  
 
 ===LEVEL 3=== 
@@ -219,7 +220,5 @@ b *rdf:type* rdf:resource
 Real triplet data in the semantic Web often are uncommited on whether the subjects and / or objects are individuals or classes. Although one can question this from a theoretical point of view one has to accept is as it is and make the best out of it. 
 
 Although LORE relations are, by definition, relations between individuals, strategies should be developed and tested how they can be used to link classes (without OWL typical quantifiers). The overlap between LORE and Metarel [cite!](which provides a typology of relations between all kinds of entities) have to be studied and solutions will be proposed. 
-
-
 
 
