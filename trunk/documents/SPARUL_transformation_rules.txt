@@ -1,0 +1,61 @@
+
+
+
+INSERT INTO GRAPH <LORE_only> {
+ ?subject LORE:is_contained_in ?object.
+}
+WHERE {
+ GRAPH <published_DATA> {
+   ?object DATA:contains ?subject.
+ }
+}
+____________________________________________
+
+INSERT INTO GRAPH <LORE_only> {
+ ?subject LORE:is_about ?object.
+}
+WHERE {
+ GRAPH <published_DATA> {
+   ?subject DATA:denotes ?object.
+ }
+}
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+INSERT INTO GRAPH <published_DATA> {
+ ?subject DATA:denotes ?object.
+}
+WHERE {
+ GRAPH <LORE_only> {
+   ?subject LORE:is_about ?object.
+   ?subject rdf:type DATA:string_of_characters.
+ }
+}
+____________________________________________
+
+INSERT INTO GRAPH <LORE_only> {
+ ?subject LORE:is_subject_of _:bn1.
+ ?object  LORE:is_object_of  _:bn1.
+ _:bn1    rdf:type           DATA:child_to_financially_responsible_parent_association.
+}
+WHERE {
+ GRAPH <published_DATA> {
+   ?subject DATA:has_financially_responsible_parent ?object.
+ }
+}
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
