@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY obo "http://purl.org/obo/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:obo="http://purl.org/obo/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <rdf:Description>
+        <oboInOwl:format-version rdf:datatype="&xsd;string">1.4</oboInOwl:format-version>
+        <oboInOwl:date rdf:datatype="&xsd;string">10:05:2013 14:22</oboInOwl:date>
+        <oboInOwl:saved-by rdf:datatype="&xsd;string">Ward Blond&#65533;&#65533;</oboInOwl:saved-by>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <AnnotationProperty rdf:about="&oboInOwl;date"/>
+    <AnnotationProperty rdf:about="&oboInOwl;def"/>
+    <AnnotationProperty rdf:about="&oboInOwl;saved-by"/>
+    <AnnotationProperty rdf:about="&oboInOwl;format-version"/>
+    <AnnotationProperty rdf:about="&rdfs;label"/>
+    <AnnotationProperty rdf:about="&oboInOwl;comment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/obo/owlapicreates -->
+
+    <ObjectProperty rdf:about="&obo;owlapicreates">
+        <rdfs:label rdf:datatype="&xsd;string">creates</rdfs:label>
+        <oboInOwl:comment>Examples: an artist paints a painting, a ribosome synthesizes a protein, a diver creates a wave.</oboInOwl:comment>
+        <oboInOwl:def>&quot;For entities S and O, it holds that &#39;S creates O&#39;, if and only if 1) an action of S directly or indirectly leads to the existence of O.&quot; [LORE:md]</oboInOwl:def>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owlapidenotes -->
+
+    <ObjectProperty rdf:about="&obo;owlapidenotes">
+        <rdfs:label rdf:datatype="&xsd;string">denotes</rdfs:label>
+        <oboInOwl:def>&quot;The relation &#39;denotes&#39; is used for connecting a symbol-like information entity with some other entity. Denotation is stricter than aboutness, as it does not expand to entities related to the target entities.&quot; [LORE:ss]</oboInOwl:def>
+        <oboInOwl:comment>Example: the string of characters &#39;Barack Obama&#39;, denotes the person Barack Obama. The string &#39;The president of the U.S.&#39; denotes him in 2012, but not in 2007.</oboInOwl:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owlapidestroys -->
+
+    <ObjectProperty rdf:about="&obo;owlapidestroys">
+        <rdfs:label rdf:datatype="&xsd;string">destroys</rdfs:label>
+        <oboInOwl:def>&quot;For entities S and O, it holds that &#39;S destroys O&#39;, if and only if 1) an action of S directly or indirectly leads to the non-existence of O.&quot; [LORE:md]</oboInOwl:def>
+        <oboInOwl:comment>Examples: An enzyme cleaves its substrate, a secretary shreds a sensitive document.</oboInOwl:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owlapiequals -->
+
+    <ObjectProperty rdf:about="&obo;owlapiequals">
+        <rdf:type rdf:resource="&owl;ReflexiveProperty"/>
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">equals</rdfs:label>
+        <oboInOwl:comment>Examples: equals(speed_car1, speed_car2), equals(animal_1, animal_2) =&gt; (example which might be well defined in a given local context but must be disambiguated for global use). Axioms: specificly, relates the values of a certain quality of two particulars, hence, relates a specific quality of two particulars, hence, relates two particulars, hence, the domain and range are: (value region, quality, particular)/(value region, quality, particular) Algebraic properties: transitive, reflexive, symmetric. Issues: The meaning of the comparative results for all of these binary generic comparative relations for particulars can be exactly specified for most scale types (see details below) and is only an issue for certain categorial qualities (e.g. color). The main issue of all af these generic comparative relations is disambiguation of what exactly is related to each otherm where not specified. Hence, the problem is how to define the exact application and give rules for that: e.g. the quality which is compared when particulars are compared local vs. global (semantic web) use. In a defined local scenario the context may clearly disambigute the related.</oboInOwl:comment>
+        <oboInOwl:def>&quot;The binary relation equals holds iff two compared particulars are &#39;equal&#39;. This equality can either be quantitative which is a numerical equality or qualitative which is the categorial equality of the two particulars.&quot; [LORE:mb]</oboInOwl:def>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owlapihas_associate -->
+
+    <ObjectProperty rdf:about="&obo;owlapihas_associate">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">has associate</rdfs:label>
+        <oboInOwl:def>&quot;The relation &#39;has associate&#39; is used as a superrelation for associative relations. These characterize independent entities through associates, which are other independent entities. The independence of associates are opposed to qualities, which are dependent entities and only exist for the sake of characterizing independent entities. Hence, lengths, colors and temperatures are qualities, related to via &#39;has quality&#39;, whereas objects and processes are entities that can be associates and that can have associates.&quot; [LORE:wb]</oboInOwl:def>
+        <oboInOwl:comment>Example: USA has associate Barack Obama (USA has president Barack Obama), John has associate room A.123 (John has office room A.123), Pete has associate Max (Pete has pet Max), Company123 has associate Ken (Company123 has employee Ken). Inverse: &#39;has associate&#39; (symmetric) Algebraic properties: symmetric, not transitive, not antitransitive. Issues: This relation is very generic and serves to create enough recall for querying on the multitude of associative relations. The relation is rather epistemological (dependent on human choices in describing knowledge) than ontological (objectively verifiable), since it holds after the creation of any associative relation between two entities. Even with restrictions on the set of associative relations, through guidelines or an extended logical definition that uses unions and disjointness of relations, it will remain hard to determine objectively whether two objects are associated to each other or not. We could however argue that any particular associative relation should be ontological, and that there exists a logical definition of &#39;has associate&#39;, as a union of such ontological associative relations, that is such that the majority of pairs of entities are not associated. This would render &#39;has associate&#39; as an ontological relation with practical use. In the absence of this definition, it remains epistemological.</oboInOwl:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owlapihas_beginning -->
+
+    <ObjectProperty rdf:about="&obo;owlapihas_beginning">
+        <rdfs:label rdf:datatype="&xsd;string">has beginning</rdfs:label>
+        <oboInOwl:comment>Example: day D has beginning morning M, marathon A has beginning 10 am.</oboInOwl:comment>
+        <oboInOwl:def>&quot;When projecting on a 1-dimensional space, x hasBeginning y iff ForAll? x, y, z; TemporalInterval?(x) AND TemporalInstant?(y) AND TemporalInstant?(z) AND isTemporalPartOf (y,x) AND isTemporalPartOf(z,x) AND y</oboInOwl:def>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owlapihas_quality -->
+
+    <ObjectProperty rdf:about="&obo;owlapihas_quality">
+        <rdfs:label rdf:datatype="&xsd;string">has quality</rdfs:label>
+        <oboInOwl:def>&quot;Has quality is a relation between an entity and his quality.&quot; [LORE:wb]</oboInOwl:def>
+        <oboInOwl:comment>Example: the apple has quality redness.</oboInOwl:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owlapiinteracts_with -->
+
+    <ObjectProperty rdf:about="&obo;owlapiinteracts_with">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">interacts with</rdfs:label>
+        <oboInOwl:comment>Examples: A boy interacts with his father, a small molecule interacts with an enzyme. Algebraic properties: symmetric.</oboInOwl:comment>
+        <oboInOwl:def>&quot;For entities S and O, it holds that &#39;S interacts with O&#39;, if and only if 1) S and O are in spatial proximity over some duration of time, and 2) they act in such a way that they have an effect on each other.&quot; [LORE:md]</oboInOwl:def>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owlapiis_about -->
+
+    <ObjectProperty rdf:about="&obo;owlapiis_about">
+        <rdfs:label rdf:datatype="&xsd;string">is about</rdfs:label>
+        <oboInOwl:def>&quot;The relation &#39;is about&#39; is the most general link between an information entity and some other entity.&quot; [LORE:ss]</oboInOwl:def>
+        <oboInOwl:comment>Example: Picasso&#39;s painting &#39;Guernica&#39; is about war, but more specifically about a war-related events such as the terror against civilians. It is also about a town, and it is about the inhabitants of that town. My chest X-ray is about my chest, but also about my ribs and my heart, as well as about some disorder, e.g. a broken clavicle. Inverse: is represented by.</oboInOwl:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owlapiis_adjacent_to -->
+
+    <ObjectProperty rdf:about="&obo;owlapiis_adjacent_to">
+        <rdfs:label rdf:datatype="&xsd;string">is adjacent to</rdfs:label>
+        <oboInOwl:def>&quot;For entities S and O, it holds that &#39;S is adjacent to O&#39;, if and only if 1) S and O are within the same space or time-space, and 2) S and O are adjacent.&quot; [LORE:wb]</oboInOwl:def>
+        <oboInOwl:comment>Example: the building is adjacent to the street, the morning is adjacent to the noon.</oboInOwl:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owlapiis_alike -->
+
+    <ObjectProperty rdf:about="&obo;owlapiis_alike">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">is alike</rdfs:label>
+        <oboInOwl:def>&quot;The binary relation &#39;is alike&#39; holds iff two compared particulars are &#39;similar&#39; but not &#39;equal&#39; (or &#39;too different&#39;). The given definition might differ from common sense (or intuitive) usage of &#39;similarity&#39; which often includes &#39;equality&#39;. The qualitative or quantitative similarity is usually defined as unequality but &#39;near to equality&#39; with a given deviation (tolerance intervall, qualitative tolerance).&quot; [LORE:ss]</oboInOwl:def>
+        <oboInOwl:comment>Examples: alike(speed_car1, speed_car2), alike(animal_1, animal_2) =&gt; (example which might be well defined in a given local context but must be disambiguated for global use). Axioms: tolerance intervall/ qualitative tolerance specified. Algebraic properties: intransitive, irreflexive (without equality), symmetric. Issues: Besides the general considerations above (equals) a further issue is, how and where to define the assumed tolerance interval which has been applied to derive the result of the comparison.</oboInOwl:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owlapiis_before -->
+
+    <ObjectProperty rdf:about="&obo;owlapiis_before">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">is before</rdfs:label>
+        <oboInOwl:def>&quot;For entities S and O, it holds that &#39;S is before O&#39;, if and only if 1) S and O are entities within the same 1-dimensional ordered space, including the time-axis and 2) S is ordered before O (where order goes from early to late, close to far, low to high, small to large and few to many).&quot; [LORE:wb]</oboInOwl:def>
+        <oboInOwl:comment>Examples: World War I is before World War II, the runner that arrived first is before the runner that arrived second, 3 is before 5, on the trip from Paris to London, Calais is before Dover Problems: The definition of the defined order may depend on a specific context, like in the trip from Paris to London. Algebraic properties: transitive, inverse relation: is after.</oboInOwl:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owlapiis_contained_in -->
+
+    <ObjectProperty rdf:about="&obo;owlapiis_contained_in">
+        <rdf:type rdf:resource="&owl;ReflexiveProperty"/>
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">is contained in</rdfs:label>
+        <oboInOwl:def>&quot;For entities S and O, it holds that &#39;S is contained in O&#39;, if and only if 1) S and O are within the same spatially dimensioned area, 2) O has an associated container volume defined by the outside borders of O (like a convex envelope, or a convex envelope minus the volume of O) and 3) space occupied by S is part of the space occupied by the associated container volume of O.&quot; [LORE:wb]</oboInOwl:def>
+        <oboInOwl:comment>Examples: some water is contained in a glass, La Palma is contained in the Atlantic Ocean. A wheel that is part of a car, and therefore located in that car, is not contained in the car. Problems: the application of &#39;is contained in&#39; depends on the definition of the associated container volume of O. This definition may often be very similar as the definition of the outside borders for &#39;is located in&#39;. Algebraic properties: reflexive, transitive Inverse relation: &#39;contains&#39;.</oboInOwl:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owlapiis_located_in -->
+
+    <ObjectProperty rdf:about="&obo;owlapiis_located_in">
+        <rdf:type rdf:resource="&owl;ReflexiveProperty"/>
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">is located in</rdfs:label>
+        <oboInOwl:comment>Examples: Pete is located in his car, Iceland is located in Europe. Problems: the application of &#39;is located in&#39; depends on the definition of the outside borders of O. If the beaches of La Palma define the outside borders of the Atlantic Ocean, then La Palma is not located in the Atlantic Ocean, otherwise it is. Somewhat counterintuitively, a wheel is located in a car and a chimney is located in a house. Algebraic properties: reflexive, transitive, inverse relation &#39;is location of&#39;, Rule: if S is part of O and O is a spatial entity, then S is located in O. Alternative names: is in, has location, has as location, is located by.</oboInOwl:comment>
+        <oboInOwl:def>&quot;For particular entities S and O, it holds that &#39;S is located in O&#39;, if and only if 1) S and O are within the same spatially dimensioned area, 2) O has a (not necessarily convex) outside border or envelope and 3) the space occupied by S is part of the space occupied by the outside borders of O.&quot; [LORE:wb]</oboInOwl:def>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owlapiis_part_of -->
+
+    <ObjectProperty rdf:about="&obo;owlapiis_part_of">
+        <rdf:type rdf:resource="&owl;ReflexiveProperty"/>
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">is part of</rdfs:label>
+        <oboInOwl:comment>Examples: Crete is part of Europe, this morning is part of today, my skin is part of my body, this third chapter is part of this book. Problems: #&#39;is part of&#39; has a broader application compared to other mereological relation types like &#39;is located in&#39;, since it is also used for time. It is still left open whether we will distinguish this temporal meaning of &#39;is part of&#39; by a different name. #&#39;is part of&#39; in ordinary speech is often understood to exclude reflexivity. Rule: if S has part O and O is a spatial entity, then S is location of O Alternative names: is part of, part of. inverse_of: has_part.</oboInOwl:comment>
+        <oboInOwl:def>&quot;For individual entities S and O, it holds that &#39;S is part of O&#39;, if and only if 1) S and O are within the same mereologically dimensioned area (like space, time, space-time, or any ordered space including abstract space like in information entities), 2) S is a part of O.&quot; [LORE:wb]</oboInOwl:def>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owlapimodifies -->
+
+    <ObjectProperty rdf:about="&obo;owlapimodifies">
+        <rdfs:label rdf:datatype="&xsd;string">modifies</rdfs:label>
+        <oboInOwl:comment>Examples: An enzymes phosphorylates its target, a desiccator dries a sample.</oboInOwl:comment>
+        <oboInOwl:def>&quot;For entities S and O, it holds that &#39;S modifies O&#39;, if and only if 1) S and O are in direct or indirect physical contact, and 2) one or more qualities or attribute values of O changes as a result of its interaction with S.&quot; [LORE:md]</oboInOwl:def>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owlapioverlaps_with -->
+
+    <ObjectProperty rdf:about="&obo;owlapioverlaps_with">
+        <rdfs:label rdf:datatype="&xsd;string">overlaps with</rdfs:label>
+        <oboInOwl:def>&quot;When projecting on a 1-dimensional space, x overlaps with y iff there is at least 1 z that is part of both x and y.&quot; [LORE:aa]</oboInOwl:def>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owlapiparticipates_in -->
+
+    <ObjectProperty rdf:about="&obo;owlapiparticipates_in">
+        <rdfs:label rdf:datatype="&xsd;string">participates in</rdfs:label>
+        <oboInOwl:comment>Examples: protein A participates in apoptosis process B, author C participates in paper writing process D</oboInOwl:comment>
+        <oboInOwl:def>&quot;For individual entities S and O, it holds that &#39;S participates in O&#39;, if and only if 1) S is an object and 2) O is a process and 3) the object S participates in the process O.&quot; [LORE:wb]</oboInOwl:def>
+    </ObjectProperty>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.0.0.1413) http://owlapi.sourceforge.net -->
+
