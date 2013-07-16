@@ -15,3 +15,33 @@
   * http://rdfdata.eionet.europa.eu/eprtr/dataflow/CityName
   * http://rdfdata.eionet.europa.eu/eprtr/dataflow/PostcodeCode
   * http://rdfdata.eionet.europa.eu/eprtr/dataflow/TelephoneCommunication
+  * http://rdfdata.eionet.europa.eu/eprtr/dataflow/FaxCommunication
+  * http://rdfdata.eionet.europa.eu/eprtr/dataflow/EmailCommunication
+  * http://rdfdata.eionet.europa.eu/eprtr/dataflow/NationalID
+
+== Bio2RDF ==
+  * http://bio2rdf.org/hhpid_vocabulary:elementGene1
+  * http://bio2rdf.org/hhpid_vocabulary:elementProtein1
+  * http://www.biopax.org/release/biopax-level3.owl#db
+  * http://www.biopax.org/release/biopax-level3.owl#id
+  * http://www.biopax.org/release/biopax-level3.owl#xref
+  * http://www.biopax.org/release/biopax-level3.owl#year
+  * http://www.biopax.org/release/biopax-level3.owl#author
+  * http://www.biopax.org/release/biopax-level3.owl#name
+  * http://www.biopax.org/release/biopax-level3.owl#comment
+  * http://www.w3.org/2000/01/rdf-schema#comment
+  * http://www.biopax.org/release/biopax-level3.owl#evidenceCode
+  * http://www.biopax.org/release/biopax-level3.owl#term
+  * http://www.biopax.org/release/biopax-level3.owl#source
+  * http://www.biopax.org/release/biopax-level3.owl#evidence
+  * http://www.biopax.org/release/biopax-level3.owl#title
+  * http://www.biopax.org/release/biopax-level3.owl#organism
+  * http://bio2rdf.org/affymetrix_vocabulary:location
+  * http://bio2rdf.org/affymetrix_vocabulary:process
+  * http://vocab.sindice.net/domain
+  * http://www.w3.org/ns/prov#wasDerivedFrom
+  * http://vocab.sindice.net/analytics#label
+  * http://vocab.sindice.net/analytics#type
+  * http://vocab.sindice.net/analytics#source
+  * http://vocab.sindice.net/analytics#publishedIn
+  * http://bio2rdf.org/dataset_vocabulary:has_predicate
