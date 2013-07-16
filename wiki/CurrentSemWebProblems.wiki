@@ -45,3 +45,27 @@
   * http://vocab.sindice.net/analytics#source
   * http://vocab.sindice.net/analytics#publishedIn
   * http://bio2rdf.org/dataset_vocabulary:has_predicate
+
+==Budapest University of Technology and Economics==
+  * akt:has-URL
+  * akt:has-web-address
+  * akt:has-email-address
+  * akt:family-name
+  * akt:given-name
+  * akt:has-postal-address
+  * akt:has-telephone-number
+
+==Comprehensive Knowledge Archive Network==
+  * http://xmlns.com/foaf/0.1/name
+  * http://purl.org/dc/terms/contributor
+  * http://purl.org/dc/terms/identifier
+  * http://purl.org/dc/terms/description
+  * http://purl.org/dc/terms/format
+  * http://purl.org/dc/terms/relation
+  * http://purl.org/dc/terms/rights
+  * http://purl.org/dc/terms/subject
+  * http://purl.org/dc/terms/title
+  * http://xmlns.com/foaf/0.1/homepage
+  * http://purl.org/dc/terms/creator
+  * http://xmlns.com/foaf/0.1/mbox
+  * http://xmlns.com/foaf/0.1/page
