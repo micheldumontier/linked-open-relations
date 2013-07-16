@@ -69,3 +69,15 @@
   * http://purl.org/dc/terms/creator
   * http://xmlns.com/foaf/0.1/mbox
   * http://xmlns.com/foaf/0.1/page
+
+==CulturaLinkedData==
+  * http://cultura.linkeddata.es/ontology/isbd/P1045 	has note
+  * http://cultura.linkeddata.es/ontology/isbd/P1004 	has title proper
+  * http://cultura.linkeddata.es/ontology/isbd/P1162 	has publication, production, distribution, etc area
+  * http://cultura.linkeddata.es/ontology/frbrer/P2079 	has part (expression)
+  * http://cultura.linkeddata.es/ontology/frbrer/P2080 	is part (expression) of
+  * http://iflastandards.info/ns/fr/frbr/frbrer/P3001 	has title of the work
+  * http://iflastandards.info/ns/isbd/elements/P1032 	has resource identifier
+  * http://iflastandards.info/ns/fr/frbr/frbrer/P2058 	is part (work) of
+  * http://iflastandards.info/ns/fr/frbr/frbrer/P2057 	has part (work)
+  * http://cultura.linkeddata.es/ontology/frbrer/P3039 	has name of person
