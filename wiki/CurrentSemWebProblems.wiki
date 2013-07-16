@@ -1,0 +1,10 @@
+#summary Current problems of the Semantic Web overview.
+
+= Synonymous relations =
+
+  * is located in - component
+  * participates in - process
+  * has function - function
+  * is expressed in - taxon - has source
+  * source - Dbxref
+  * source - has_PMID
