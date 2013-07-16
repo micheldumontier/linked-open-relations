@@ -1,10 +1,17 @@
 #summary Current problems of the Semantic Web overview.
 
 = Synonymous relations =
-
+== BioGateway ==
   * is located in - component
   * participates in - process
   * has function - function
-  * is expressed in - taxon - has source
-  * source - Dbxref
-  * source - has_PMID
+  * has source - is expressed in - taxon
+  * Dbxref - source
+  * has_PMID - source
+
+== European Environment Agency ==
+  * http://rdfdata.eionet.europa.eu/eprtr/dataflow/Name
+  * http://rdfdata.eionet.europa.eu/eprtr/dataflow/StreetName
+  * http://rdfdata.eionet.europa.eu/eprtr/dataflow/CityName
+  * http://rdfdata.eionet.europa.eu/eprtr/dataflow/PostcodeCode
+  * http://rdfdata.eionet.europa.eu/eprtr/dataflow/TelephoneCommunication
