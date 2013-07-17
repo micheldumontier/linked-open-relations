@@ -81,3 +81,50 @@
   * http://iflastandards.info/ns/fr/frbr/frbrer/P2058 	is part (work) of
   * http://iflastandards.info/ns/fr/frbr/frbrer/P2057 	has part (work)
   * http://cultura.linkeddata.es/ontology/frbrer/P3039 	has name of person
+
+==Dbpedia==
+  * http://dbpedia.org/property/%3EHomepage
+  * http://dbpedia.org/property/%3ELocation
+  * http://dbpedia.org/property/%3EName
+  * http://dbpedia.org/property/%5D%5DNickname
+  * http://dbpedia.org/property/%7DFullname
+  * http://dbpedia.org/property/'''''name
+  * http://dbpedia.org/property/'''Nickname
+  * http://dbpedia.org/property/'''Type
+  * http://dbpedia.org/property/'''name
+  * http://dbpedia.org/property/'''title
+  * http://dbpedia.org/property/'''url
+  * http://dbpedia.org/property/''Name
+  * http://dbpedia.org/property/''clubname
+  * http://dbpedia.org/property/(07371)PostalCode
+  * http://dbpedia.org/property/(photoByKathiBentley)Name
+  * http://dbpedia.org/property/))))))Name
+  * http://dbpedia.org/property/..Name
+  * http://dbpedia.org/property///imageName
+  * http://dbpedia.org/property/01871PostalCode
+  * http://dbpedia.org/property/033PostalCode
+  * http://dbpedia.org/property/05661PostalCode
+  * http://dbpedia.org/property/100+Homepage
+  * http://dbpedia.org/property/10name
+  * http://dbpedia.org/property/17Homepage
+  * http://dbpedia.org/property/1904Fullname
+  * http://dbpedia.org/property/1939Location
+  * http://dbpedia.org/property/1966Location
+  * http://dbpedia.org/property/1cName
+  * http://dbpedia.org/property/1name
+  * http://dbpedia.org/property/200pxNickname
+  * http://dbpedia.org/property/2010Nickname
+  * http://dbpedia.org/property/2012Location
+  * http://dbpedia.org/property/358Label
+
+etc. Dbpedia seems to repeat the property 'has name' in many ways. This is gathered by skimming superficially up to the alphabetical position of the number 3. The number of predicates do not become lower further in the alphabet.
+
+
+
+
+
+
+
+
+
+
