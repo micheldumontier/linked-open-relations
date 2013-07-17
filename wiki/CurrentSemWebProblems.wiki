@@ -137,7 +137,15 @@ The namespace that starts with http://dbpedia.org/ontology is better maintained.
 But no partOf there:
   * http://dbpedia.org/ontology/part
 
-
-
-
+A random chunck of DBpedia:
+  * http://dbpedia.org/property/inwonersnaam
+  * http://dbpedia.org/property/io
+  * http://dbpedia.org/property/iobdbId
+  * http://dbpedia.org/property/ioc
+  * http://dbpedia.org/property/iocnation
+  * http://dbpedia.org/property/iodine
+  * http://dbpedia.org/property/iomCharacterName
+  * http://dbpedia.org/property/ions
+  * http://dbpedia.org/property/iowprefix
+  * http://dbpedia.org/property/ip
 
