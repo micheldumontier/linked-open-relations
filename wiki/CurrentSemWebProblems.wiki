@@ -149,3 +149,26 @@ A random chunck of DBpedia:
   * http://dbpedia.org/property/iowprefix
   * http://dbpedia.org/property/ip
 
+==Deep Blue (RKBExplorer)==
+  * akt:family-name
+  * akt:full-name
+  * akts:has-pretty-name
+  * akt:given-name
+  * akt:has-postal-address
+  * akt:has-date
+  * akts:year-of
+  * akt:has-title
+  * akt:has-URL
+  * akt:has-email-address
+  * dcterms:title
+  * dcterms:date
+  * foaf:homepage
+  * foaf:nick
+  * akt:has-web-address
+  * akt:address-postcode
+  * akt:address-city-or-village
+
+
+
+
+
