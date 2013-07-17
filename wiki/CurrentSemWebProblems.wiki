@@ -117,12 +117,25 @@
   * http://dbpedia.org/property/2012Location
   * http://dbpedia.org/property/358Label
 
-etc. Dbpedia seems to repeat the property 'has name' in many ways. This is gathered by skimming superficially up to the alphabetical position of the number 3. The number of predicates do not become lower further in the alphabet.
+etc. DBpedia seems to repeat the property 'has name' in many ways. This is gathered by skimming superficially up to the alphabetical position of the number 3. The number of predicates do not become lower further in the alphabet. Ironically, http://dbpedia.org/property/name, does not exist. There is http://dbpedia.org/property/namE though.
 
-
-
-
-
+DBpedia seems to prefer camelCase above CamelCase for predicates. Underscores or dashes are not used.
+http://dbpedia.org/property/hasWrittenFor
+http://dbpedia.org/ontology/hasJunctionWith
+ are the only predicate that starts with 'has'. For 'is' as a verb there are a dozen, and also 'isa':
+...
+  * http://dbpedia.org/property/isVehicle
+  * http://dbpedia.org/property/isa
+  * http://dbpedia.org/property/isaf
+...
+Further on, there are:
+  * http://dbpedia.org/property/locatedin
+  * http://dbpedia.org/property/partOf
+The namespace that starts with http://dbpedia.org/ontology is better maintained. Predicates are without typo's there. There we have the following kinds of predicates:
+  * http://dbpedia.org/ontology/Automobile/fuelCapacity
+  * http://dbpedia.org/ontology/Automobile/wheelbase
+But no partOf there:
+  * http://dbpedia.org/ontology/part
 
 
 
