@@ -55,6 +55,12 @@
   * akt:has-postal-address
   * akt:has-telephone-number
 
+Contains may examples of resources that both have a type and a superclass, e.g.
+	?s	resist:Dependability
+ 	?type	rdfs:Resource
+ 	?superclass	akt:Research-Area
+
+
 ==Comprehensive Knowledge Archive Network==
   * http://xmlns.com/foaf/0.1/name
   * http://purl.org/dc/terms/contributor
@@ -167,8 +173,6 @@ A random chunck of DBpedia:
   * akt:has-web-address
   * akt:address-postcode
   * akt:address-city-or-village
-
-
 
 
 
