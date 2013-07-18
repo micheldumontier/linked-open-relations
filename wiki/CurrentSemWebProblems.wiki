@@ -63,8 +63,11 @@ Only metaclasses like 'ObjectProperty' have both a type and a superclass.
   * akt:has-telephone-number
 
 Contains many examples of resources that both have a type and a superclass, e.g.
+
 	?s	resist:Dependability
+
  	?type	rdfs:Resource
+
  	?superclass	akt:Research-Area
 
 
@@ -83,6 +86,8 @@ Contains many examples of resources that both have a type and a superclass, e.g.
   * http://xmlns.com/foaf/0.1/mbox
   * http://xmlns.com/foaf/0.1/page
 
+Has no examples of both rdf:type and rdfs:subClassOf.
+
 ==CulturaLinkedData==
   * http://cultura.linkeddata.es/ontology/isbd/P1045 	has note
   * http://cultura.linkeddata.es/ontology/isbd/P1004 	has title proper
@@ -94,6 +99,8 @@ Contains many examples of resources that both have a type and a superclass, e.g.
   * http://iflastandards.info/ns/fr/frbr/frbrer/P2058 	is part (work) of
   * http://iflastandards.info/ns/fr/frbr/frbrer/P2057 	has part (work)
   * http://cultura.linkeddata.es/ontology/frbrer/P3039 	has name of person
+
+Some Cultura classes have both rdf:type owl:Class and a superclass.
 
 ==Dbpedia==
   * http://dbpedia.org/property/%3EHomepage
@@ -162,6 +169,9 @@ A random chunck of DBpedia:
   * http://dbpedia.org/property/iowprefix
   * http://dbpedia.org/property/ip
 
+Some classes have both rdf:type owl:Class and a superclass.
+
+
 ==Deep Blue (RKBExplorer)==
   * akt:family-name
   * akt:full-name
@@ -180,4 +190,7 @@ A random chunck of DBpedia:
   * akt:has-web-address
   * akt:address-postcode
   * akt:address-city-or-village
+
+Many resources have both rdf:type rdfs:Resource, and a superclass.
+
 
