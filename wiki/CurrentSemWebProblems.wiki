@@ -18,7 +18,7 @@ Three issues are reviewed here:
 === Which URIs are both instance and class? ===
 BioGateway's classes also have types (meaning they behave as instances as well).
 
-=== Does the store use defined relations ===
+=== Does the store use defined relations? ===
 Most relations in BioGateway are not defined. Updates in this respect by the end of 2013 are planned. E.g. Dublin Core will be used more.
 
 
@@ -35,6 +35,9 @@ Most relations in BioGateway are not defined. Updates in this respect by the end
 
 === Which URIs are both instance and class? ===
 Only metaclasses like 'ObjectProperty' have both a type and a superclass.
+
+=== Does the store use defined relations? ===
+?? service down after revisiting
 
 == Bio2RDF ==
 === Which relations are synonymous? ===
@@ -68,7 +71,7 @@ Only metaclasses like 'ObjectProperty' have both a type and a superclass.
 Only metaclasses like 'ObjectProperty' have both a type and a superclass.
 
 === Does the store use defined relations? ===
-
+Bio2RDF uses some DC vocabulary and some OWL/RDF vocabulary.
 
 ==Budapest University of Technology and Economics==
 === Which relations are synonymous? ===
@@ -90,7 +93,9 @@ Contains many examples of resources that both have a type and a superclass, e.g.
  	?superclass	akt:Research-Area
 
 === Does the store use defined relations? ===
-
+This store uses OWL/RDF vocabulary, some DC, aktors.org and two Foaf predicates:
+  * foaf:nick
+  * foaf:primaryTopic
 
 ==Comprehensive Knowledge Archive Network==
 === Which relations are synonymous? ===
@@ -112,6 +117,7 @@ Contains many examples of resources that both have a type and a superclass, e.g.
 Has no examples of both rdf:type and rdfs:subClassOf.
 
 === Does the store use defined relations? ===
+This store uses only about 25 relations and uses only OWL/RDF, DC and Foaf.
 
 ==CulturaLinkedData==
 === Which relations are synonymous? ===
@@ -130,6 +136,7 @@ Has no examples of both rdf:type and rdfs:subClassOf.
 Some Cultura classes have both rdf:type owl:Class and a superclass.
 
 === Does the store use defined relations? ===
+Apart from OWL/RDF, DC and Virtuoso relations, this store uses hundreds of self-defined relations.
 
 ==Dbpedia==
 === Which relations are synonymous? ===
@@ -203,6 +210,7 @@ A random chunck of DBpedia:
 Some classes have both rdf:type owl:Class and a superclass.
 
 === Does the store use defined relations? ===
+No. The relations in DbPedia are created by many users.
 
 ==Deep Blue (RKBExplorer)==
 === Which relations are synonymous? ===
@@ -228,3 +236,4 @@ Some classes have both rdf:type owl:Class and a superclass.
 Many resources have both rdf:type rdfs:Resource, and a superclass.
 
 === Does the store use defined relations? ===
+This triple store uses vocabularies from OWL/RDF, DC, aktors.org and Foaf.
