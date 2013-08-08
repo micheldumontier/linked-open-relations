@@ -23,6 +23,7 @@ Most relations in BioGateway are not defined. Updates in this respect by the end
 
 
 == European Environment Agency ==
+=== Which relations are synonymous? ===
   * http://rdfdata.eionet.europa.eu/eprtr/dataflow/Name
   * http://rdfdata.eionet.europa.eu/eprtr/dataflow/StreetName
   * http://rdfdata.eionet.europa.eu/eprtr/dataflow/CityName
@@ -32,9 +33,11 @@ Most relations in BioGateway are not defined. Updates in this respect by the end
   * http://rdfdata.eionet.europa.eu/eprtr/dataflow/EmailCommunication
   * http://rdfdata.eionet.europa.eu/eprtr/dataflow/NationalID
 
+=== Which URIs are both instance and class? ===
 Only metaclasses like 'ObjectProperty' have both a type and a superclass.
 
 == Bio2RDF ==
+=== Which relations are synonymous? ===
   * http://bio2rdf.org/hhpid_vocabulary:elementGene1
   * http://bio2rdf.org/hhpid_vocabulary:elementProtein1
   * http://www.biopax.org/release/biopax-level3.owl#db
@@ -61,10 +64,12 @@ Only metaclasses like 'ObjectProperty' have both a type and a superclass.
   * http://vocab.sindice.net/analytics#publishedIn
   * http://bio2rdf.org/dataset_vocabulary:has_predicate
 
+=== Which URIs are both instance and class? ===
 Only metaclasses like 'ObjectProperty' have both a type and a superclass.
 
 
 ==Budapest University of Technology and Economics==
+=== Which relations are synonymous? ===
   * akt:has-URL
   * akt:has-web-address
   * akt:has-email-address
@@ -73,6 +78,7 @@ Only metaclasses like 'ObjectProperty' have both a type and a superclass.
   * akt:has-postal-address
   * akt:has-telephone-number
 
+=== Which URIs are both instance and class? ===
 Contains many examples of resources that both have a type and a superclass, e.g.
 
 	?s	resist:Dependability
@@ -83,6 +89,7 @@ Contains many examples of resources that both have a type and a superclass, e.g.
 
 
 ==Comprehensive Knowledge Archive Network==
+=== Which relations are synonymous? ===
   * http://xmlns.com/foaf/0.1/name
   * http://purl.org/dc/terms/contributor
   * http://purl.org/dc/terms/identifier
@@ -97,9 +104,11 @@ Contains many examples of resources that both have a type and a superclass, e.g.
   * http://xmlns.com/foaf/0.1/mbox
   * http://xmlns.com/foaf/0.1/page
 
+=== Which URIs are both instance and class? ===
 Has no examples of both rdf:type and rdfs:subClassOf.
 
 ==CulturaLinkedData==
+=== Which relations are synonymous? ===
   * http://cultura.linkeddata.es/ontology/isbd/P1045 	has note
   * http://cultura.linkeddata.es/ontology/isbd/P1004 	has title proper
   * http://cultura.linkeddata.es/ontology/isbd/P1162 	has publication, production, distribution, etc area
@@ -111,9 +120,11 @@ Has no examples of both rdf:type and rdfs:subClassOf.
   * http://iflastandards.info/ns/fr/frbr/frbrer/P2057 	has part (work)
   * http://cultura.linkeddata.es/ontology/frbrer/P3039 	has name of person
 
+=== Which URIs are both instance and class? ===
 Some Cultura classes have both rdf:type owl:Class and a superclass.
 
 ==Dbpedia==
+=== Which relations are synonymous? ===
   * http://dbpedia.org/property/%3EHomepage
   * http://dbpedia.org/property/%3ELocation
   * http://dbpedia.org/property/%3EName
@@ -180,10 +191,12 @@ A random chunck of DBpedia:
   * http://dbpedia.org/property/iowprefix
   * http://dbpedia.org/property/ip
 
+=== Which URIs are both instance and class? ===
 Some classes have both rdf:type owl:Class and a superclass.
 
 
 ==Deep Blue (RKBExplorer)==
+=== Which relations are synonymous? ===
   * akt:family-name
   * akt:full-name
   * akts:has-pretty-name
@@ -202,4 +215,5 @@ Some classes have both rdf:type owl:Class and a superclass.
   * akt:address-postcode
   * akt:address-city-or-village
 
+=== Which URIs are both instance and class? ===
 Many resources have both rdf:type rdfs:Resource, and a superclass.
