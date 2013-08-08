@@ -1,15 +1,26 @@
 #summary Current problems of the Semantic Web overview.
 
-= Synonymous relations =
+= SemWeb Problems =
+Three issues are reviewed here:
+  # Which relations are synonymous?
+  # Which URIs are both instance and class?
+  # Does the store use defined relations?
+
 == BioGateway ==
+=== Which relations are synonymous? ===
   * is located in - component
   * participates in - process
   * has function - function
   * has source - is expressed in - taxon
   * Dbxref - source
   * has_PMID - source
-
+  
+=== Which URIs are both instance and class? ===
 BioGateway's classes also have types (meaning they behave as instances as well).
+
+=== Does the store use defined relations ===
+Most relations in BioGateway are not defined. Updates in this respect by the end of 2013 are planned. E.g. Dublin Core will be used more.
+
 
 == European Environment Agency ==
   * http://rdfdata.eionet.europa.eu/eprtr/dataflow/Name
@@ -192,5 +203,3 @@ Some classes have both rdf:type owl:Class and a superclass.
   * akt:address-city-or-village
 
 Many resources have both rdf:type rdfs:Resource, and a superclass.
-
-
