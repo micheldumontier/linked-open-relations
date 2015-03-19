@@ -1,0 +1,54 @@
+# Rules for transforming level 1 relations towards higher levels
+
+
+The SPARQL Inference Notation (SPIN) and SPARQL/Update (SPARUL) are two recent Semantic Web technologies, which can work together for creating rules in RDF and Linked Data. SPARQL makes queries over RDF graphs, SPARUL updates and transforms RDF graphs, whereas SPIN provides an RDF notation for both SPARQL and SPARUL. An RDF store that contains SPIN rules, can therefore update itself automatically.
+
+LORE can use SPIN-expressed SPARUL rules to transform Linked Data from various origins towards Linked Data that contains LORE relations only. The workflow for implementing this architecture implies that Linked Data publishers create a SPARUL rule for each non-LORE relation they have published. This will result in a library of SPIN-expressed SPARUL rules that provides a more solid semantics to the Linked Data, and that may improve query-recall when the rules are actually implemented.
+
+
+Here follows an example of a LORE rule in SPARUL, which defines the IRI my\_LOD:part\_of in terms of the LORE relation LORE:is-part-of:
+
+```
+PREFIX LORE:...
+PREFIX my_LOD:...
+INSERT INTO GRAPH <LORE_only> {
+  ?subject <LORE:is-part-of> ?object.
+}
+WHERE {
+  GRAPH <published_LOD> {
+    ?subject <my_LOD:part_of> ?object.
+  }
+}
+```
+
+
+An example of an expansion of a triple that expresses a disposition at the class-level in OWL/RDF:
+```
+ water *boiling-point* 100C
+ <=>
+ water *rdfs:subClassOf* substance
+ 100 C *rdfs:subClassOf* quality
+ water *rdfs:subClassOf* substance#12345
+ substance#12345 *owl:onProperty* boils-at
+ substance#12345 *owl:someValuesFrom* 100C
+ <=>
+ water *rdfs:subClassOf* substance
+ 100 C *rdfs:subClassOf* quality
+ water *rdfs:subClassOf* substance#65476
+ substance#65476 *owl:onProperty* has-disposition 
+ substance#65476 *owl:someValuesFrom* boiling-disposition#345846
+ boiling-disposition#345846 *rdfs:subClassOf* disposition
+ boiling-disposition#345846 *owl:equivalentClass* realizable#678453
+ realizable#678453 *owl:onProperty* is-realized-in 
+ realizable#678453 *owl:someValuesFrom* boiling-process#648766 
+ boiling-process#648766 *rdfs:subClassOf* process
+ boiling-process#648766 *owl:intersectionOf* bnode#245887  
+ bnode#245887 rdf:first water-process#78974
+ water-process#78974 *owl:onProperty* has-participant
+ water-process#78974 owl:someValuesFrom water 
+ bnode#245887 rdf:rest bnode#478751
+ bnode#478751 rdf:first 100C-process#35468
+ 100C-process#35468 *owl:onProperty* has-participant
+ 100C-process#35468 owl:someValuesFrom 100C 
+ bnode#478751 rdf:rest rdf:nil
+```

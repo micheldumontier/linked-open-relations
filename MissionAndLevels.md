@@ -1,0 +1,226 @@
+# **LORE - LINKED OPEN RELATIONS** #
+
+Initiated by:
+André Andrade,
+Ward Blondé,
+Martin Boeker,
+Michel Dumontier,
+Stefan Schulz
+
+
+
+## Mission statement: ##
+Create a domain independent standard for Semantic Web relations
+
+## Scope ##
+The objective of LORE is to create a set of relations for use on the Semantic Web.
+
+LORE will provide
+  * an orthogonal, domain-independent set of binary relations expressed as a (limited) list of OWL object properties. Yet, the use of LORE should be possible without OWL reasoning. (We should also permit some flexibility of using these relations between classes or between terms where there is no clear commitment regarding whether they denote classes or instances.)
+
+  * a characterization of each relation in terms of meaning, scope, algebraic properties;
+
+  * practices for defining complex relations from the Semantic Web that are not in LORE's core list.
+
+  * continuously evaluate LORE relations and their application
+
+## Terminological issues ##
+
+There is ambiguous use of terms like "relation", "relationships", "role", "relation type", "relation instance", "relation assertion", "predicate", "predication". In LORE, we will use the term "relation".
+
+## Three type of LORE relations ##
+LORE classifies relations as, in a first approximation, distinguished between the following three semantic levels:
+
+### LEVEL 1 ###
+Level 1 relations are those drawn from natural language (e.g. **stands in**, **phosphorylizes**, **has-author**)
+
+Characteristics of level 1 relations (also called "material relations"):
+
+  * Intuitively understandable. They are mostly directly derived from natural language predicates.
+
+  * Some of these relations would better describe the domain if they were n-ary (n > 2). For instance the relation **treats** that could be used in the sense **Dr. X treats Mr. Y**, which however could be refined by something like **Dr. X treats Mr. Y at Hospital Z at 20120101 using Antibiotics**. Or **NEJM hasImpactFactor 24** should be completed by the year.
+
+  * possibly ambiguous and context-dependent
+
+  * There is also a tendency to assert level 1 relations between classes _Insulin_ **stimulates** _Receptor_
+
+  * may be expressed as classes, e.g. _Phosphorylation_, _Authoring_..., in order to express dispositional or procedural knowledge.
+
+  * They are SPARQL - friendly
+
+  * It is difficult and arbitrary to identify and extract a domain-independent set from these relations for LORE.
+
+### LEVEL 2 ###
+These relations are ontological in a strict sense (also called "formal relations"). They have the following characteristics:
+
+  * They are primitive (at the level of LORE)
+
+  * They can be applied across domains (domain-independent). E.g. the relation agent\_of can describe the author of a writing process just as the agent of an infection process.
+
+  * They are generally binary, although time may be a third argument. For instance, a certain tyre is part of my car now, but it was not last year.
+
+  * They can be used in DL axioms that express necessary conditions. Example: part-of is used in the definition of Body part.
+
+  * Despite their universal applicability they are seldomly used in triple stores
+
+  * DL Reasoner - friendly, but also SPARQL
+
+
+
+### LEVEL 3 ###
+These relations are refinements of Level 2 relations.
+Characteristics:
+
+  * They can be fully defined based on level 2 relations
+
+  * are often domain dependent. Example: **location-country** is a level 3 subrelation of **has-location** (a level 2 relation) with a range restricted to "country". Or **project-participant** is a refinement of **participant-of** with range of the type _Project_.
+
+  * Reasoner friendly
+
+
+## How LORE addresses the three levels ##
+
+LORE provides standard practices and relations for all three levels. Only for level 2 it claims to be exhaustive. Level 2 relations will be expressed as OWL object properties; and they should be related to relations as used in the formal ontology community, e.g. in upper level ontologies like BFO, DOLCE, GFO, SUMO.
+
+The inclusion level of 1 and 3 relations could easily go out of control. Therefore they are added only as long as they are largely domain-independent and considered important by the Semantic Web community. Both level 1 and 3 relations should be defined based on level 2 relations.
+
+LORE will not just replicate popular relations that have already been introduced elsewhere (Dublin Core, FOAF, ...). However, LORE will propose solutions how to transform sets of triples containing level 1 or 3 relations into sets of triples containing level two relations.
+
+For all levels popular and important examples, together with exemplar transformation rules will be provided.
+
+## LORE rules ##
+
+Rules are an important means for transforming between relation expressions. The following example instantiates a rule that transforms between level 2 and level 3:
+
+
+```
+ m *has-quality* q <=>
+ m *bearer-of* q
+ q *rdf:type* Quality
+```
+
+
+```
+ France *has-province* Brittany
+ <=>
+ France *has-part* Brittany
+ Brittany *rdf:type* Province 
+```
+
+Such rules could be abstracted e.g.
+
+```
+ (?x *has-A* ?y) 
+  <=>
+ (?x *has-part* ?y)
+ (?y *rdf:type* A)
+```
+
+
+
+The next rule example applies to the transformation between level 1 and 2
+
+```
+ Mozart *music-composer* Magic Flute
+ <=>
+ Composing#238742 *rdf:type* Composing
+ Composing#238742 *has-agent* Mozart
+ Composing#238742 *has-outcome* Magic Flute
+```
+
+using a rule like
+```
+ ?a *music-composer* ?b
+ <=>
+ _c *rdf:type* Composing
+ _c *has-agent* ?a
+ _c *has-target* ?b 
+ ?a rdf:type Human
+```
+
+_c being a blank node_
+
+More complex example:
+
+Example foaf:maker vs. dc:creator
+
+```
+a creator b     ; means has creator
+<=>
+Creating#238742 *rdf:type* Creating
+Creating#238742 *has-agent* b
+Creating#238742  *has-outcome* a
+```
+
+Such rules can be expressed with SPARQL/Update:
+
+```
+PREFIX dc:     <http://purl.org/dc/elements/1.1/>
+PREFIX LOD:    <http://....>
+PREFIX LORE:   <http://....>
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+INSERT {
+ _:blank_node  rdf:type         LOD:Creating.
+ _:blank_node  LORE:has-agent   ?b.
+ _:blank_node  LORE:has-outcome ?a.
+}
+WHERE {
+ ?a            dc:creator       ?b.
+}
+```
+
+Toghether with the inverse rule:
+
+```
+PREFIX dc:     <http://purl.org/dc/elements/1.1/>
+PREFIX LOD:    <http://....>
+PREFIX LORE:   <http://....>
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+INSERT {
+ ?a  dc:creator       ?b.
+}
+WHERE {
+ ?x  rdf:type         LOD:Creating.
+ ?x  LORE:has-agent   ?b.
+ ?x  LORE:has-outcome ?a.
+}
+```
+
+This creates an RDF model that facilitates more reasoning and generates a higher recall for SPARQL queries.
+
+
+Another example
+
+"specialized data category designation"
+
+This is a very specialized, non self explaining relation from data.gov.
+In order to reuse data using this relation the user / creator of this relation should do the following:
+
+  1. specify the domain and range of the relation
+  1. identify a process which represents this relation given domain and range and categorize this process hierarchically, e.g. using WordNet
+or identifying a LORE relation which is a superrelation of it
+  1. create an equivalence rule
+
+```
+a specialized data category designation b      
+
+specialized data category designation *rdfs:subPropertyOf* isAbout
+a *rdf:type* dataset
+b *rdf:type* rdf:resource 
+
+(this is an example without reification) 
+
+
+
+(to be continued… this could be a good example to demonstrate how SPARQL querying could be enhanced by LORE: Ward ??) 
+```
+
+
+
+## Class / Instance Problem : ##
+
+Real triplet data in the semantic Web often are uncommited on whether the subjects and / or objects are individuals or classes. Although one can question this from a theoretical point of view one has to accept is as it is and make the best out of it.
+
+Although LORE relations are, by definition, relations between individuals, strategies should be developed and tested how they can be used to link classes (without OWL typical quantifiers). The overlap between LORE and Metarel [cite!](which provides a typology of relations between all kinds of entities) have to be studied and solutions will be proposed.
+
+In a first approximation we should treat the assertion of LORE relations between classes as a kind of punning, i.e. we consider the classes as individuals in the context in which they occur as arguments of LORE relations.

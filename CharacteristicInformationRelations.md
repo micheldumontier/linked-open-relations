@@ -1,0 +1,79 @@
+# Introduction #
+
+An information relation is a relation that pertains to information, models, plans and representations, summarized as information entities.
+Information entities are immaterial, but they can exist in material entities such as brains, computer disks, sheets of paper.
+
+# Details #
+
+## **"has information part"** ##
+
+**inverse**: "is information part of"
+
+This relation is used to describe the mereological setup of information entities. For instance, an abstract is an information part of a scientific paper, an operator is an information part of a mathematical formula, a letter is part of a word, etc.
+
+**Axioms**:
+
+  * information entities can only have information entities as parts and are always parts of information entities.
+
+  * "is information part of" and its inverse are reflexive and transitive
+
+  * "is information part of" is fully defined as "part of", that has information entities in their domain and range.
+
+This relation pair is a level 3 relation because it can be fully defined by the relation pair "is part of" and "has part"
+
+
+
+
+## **"is about"** ##
+
+The relation "is about" is the most general link between an information entity and some other entity.
+
+Example: Picasso's painting "Guernica" is about war, but more specifically about a war-related events such as the terror against civilians. It is also about a town, and it is about the inhabitants of that town. My chest X-ray is about my chest, but also about my ribs and my heart, as well as about some disorder, e.g. a broken clavicle.
+
+**Inverse**: is represented by
+
+**Issues**
+The axiom
+```
+a 'is about' b AND b 'has part' c --> a 'is about' c 
+```
+seems to hold in many cases, especially in case c is a part of a certain relevance of salience for b
+
+What about the axiom
+```
+a 'has abstract part' b AND b 'is about' c  --> a 'is about' c 
+```
+
+
+
+## **"denotes"** ##
+
+The relation "denotes" is used for connecting a symbol-like information entity with some other entity. Denotation is stricter than aboutness, as it does not expand to entities related to the target entities.
+
+Example: the string of characters "Barack Obama", denotes the person Barack Obama. The string "The president of the U.S." denotes him in 2012, but not in 2007.
+
+**Inverse**: "denoted by"
+
+**Parent**: "is about"
+
+**Issues**
+The representation of denotation as a binary relation is a simplification. Denotation is time-dependent (see the president example), and it is also dependent on human conventions such as the meaning of a vocabulary (E.g., in Italian "Monaco" denotes both the country Monaco and the city of Munich).
+
+Furthermore, denotation is frequently not only asserted between individuals but between an individual (the symbol) and a class (type), or between a symbol and a plan.
+
+For instance, the expressions "Airbus A380" could denote (i) one single individual as well as the type of this airplane. As with most artefacts, types are specified as construction plans, "Airbus A380" could also denotate a construction plan or a visual rendering generated out of it (even before any material instance existed).
+
+
+
+## **"has associate"** ##
+
+The relation "has associate" is used as a superrelation for associative relations. These characterize independent entities through associates, which are other independent entities. The independence of associates are opposed to qualities, which are dependent entities and only exist for the sake of characterizing independent entities. Hence, lengths, colors and temperatures are qualities, related to via "has quality", whereas objects and processes are entities that can be associates and that can have associates.
+
+Example: USA has associate Barack Obama (USA has president Barack Obama), John has associate room A.123 (John has office room A.123), Pete has associate Max (Pete has pet Max), Company123 has associate Ken (Company123 has employee Ken) .
+
+**Inverse**: "has associate" (symmetric)
+
+**Algebraic properties**: symmetric, not transitive, not antitransitive
+
+**Issues**: This relation is very generic and serves to create enough recall for querying on the multitude of associative relations. The relation is rather epistemological (dependent on human choices in describing knowledge) than ontological (objectively verifiable), since it holds after the creation of any associative relation between two entities. Even with restrictions on the set of associative relations, through guidelines or an extended logical definition that uses unions and disjointness of relations, it will remain hard to determine objectively whether two objects are associated to each other or not. We could however argue that any particular associative relation should be ontological, and that there exists a logical definition of "has associate", as a union of such ontological associative relations, that is such that the majority of pairs of entities are not associated. This would render "has associate" as an ontological relation with practical use. In the absence of this definition, it remains epistemological.
+

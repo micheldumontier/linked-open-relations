@@ -1,0 +1,237 @@
+# Semweb Problems #
+Three issues are reviewed here:
+  1. Which relations are synonymous: for this issue a selection is made of relations that appear often. The namespace betrays the overlap with other stores.
+  1. Which URIs are both instance and class: this is investigated with a query that asks for rdf:type and rdfs:subClassOf.
+  1. Does the store use defined relations: for instance Dublin Core, Foaf, etc.
+
+## BioGateway ##
+### Which relations are synonymous? ###
+  * is located in - component
+  * participates in - process
+  * has function - function
+  * has source - is expressed in - taxon
+  * Dbxref - source
+  * has\_PMID - source
+
+### Which URIs are both instance and class? ###
+BioGateway's classes also have types (meaning they behave as instances as well).
+
+### Does the store use defined relations? ###
+Most relations in BioGateway are not defined. Updates in this respect by the end of 2013 are planned. E.g. Dublin Core will be used more.
+
+
+## European Environment Agency ##
+### Which relations are synonymous? ###
+  * http://rdfdata.eionet.europa.eu/eprtr/dataflow/Name
+  * http://rdfdata.eionet.europa.eu/eprtr/dataflow/StreetName
+  * http://rdfdata.eionet.europa.eu/eprtr/dataflow/CityName
+  * http://rdfdata.eionet.europa.eu/eprtr/dataflow/PostcodeCode
+  * http://rdfdata.eionet.europa.eu/eprtr/dataflow/TelephoneCommunication
+  * http://rdfdata.eionet.europa.eu/eprtr/dataflow/FaxCommunication
+  * http://rdfdata.eionet.europa.eu/eprtr/dataflow/EmailCommunication
+  * http://rdfdata.eionet.europa.eu/eprtr/dataflow/NationalID
+
+### Which URIs are both instance and class? ###
+Only metaclasses like 'ObjectProperty' have both a type and a superclass.
+
+### Does the store use defined relations? ###
+?? service down after revisiting
+
+## Bio2RDF ##
+### Which relations are synonymous? ###
+  * http://bio2rdf.org/hhpid_vocabulary:elementGene1
+  * http://bio2rdf.org/hhpid_vocabulary:elementProtein1
+  * http://www.biopax.org/release/biopax-level3.owl#db
+  * http://www.biopax.org/release/biopax-level3.owl#id
+  * http://www.biopax.org/release/biopax-level3.owl#xref
+  * http://www.biopax.org/release/biopax-level3.owl#year
+  * http://www.biopax.org/release/biopax-level3.owl#author
+  * http://www.biopax.org/release/biopax-level3.owl#name
+  * http://www.biopax.org/release/biopax-level3.owl#comment
+  * http://www.w3.org/2000/01/rdf-schema#comment
+  * http://www.biopax.org/release/biopax-level3.owl#evidenceCode
+  * http://www.biopax.org/release/biopax-level3.owl#term
+  * http://www.biopax.org/release/biopax-level3.owl#source
+  * http://www.biopax.org/release/biopax-level3.owl#evidence
+  * http://www.biopax.org/release/biopax-level3.owl#title
+  * http://www.biopax.org/release/biopax-level3.owl#organism
+  * http://bio2rdf.org/affymetrix_vocabulary:location
+  * http://bio2rdf.org/affymetrix_vocabulary:process
+  * http://vocab.sindice.net/domain
+  * http://www.w3.org/ns/prov#wasDerivedFrom
+  * http://vocab.sindice.net/analytics#label
+  * http://vocab.sindice.net/analytics#type
+  * http://vocab.sindice.net/analytics#source
+  * http://vocab.sindice.net/analytics#publishedIn
+  * http://bio2rdf.org/dataset_vocabulary:has_predicate
+
+### Which URIs are both instance and class? ###
+Only metaclasses like 'ObjectProperty' have both a type and a superclass.
+
+### Does the store use defined relations? ###
+Bio2RDF uses some DC vocabulary and some OWL/RDF vocabulary.
+
+## Budapest University of Technology and Economics ##
+### Which relations are synonymous? ###
+  * akt:has-URL
+  * akt:has-web-address
+  * akt:has-email-address
+  * akt:family-name
+  * akt:given-name
+  * akt:has-postal-address
+  * akt:has-telephone-number
+
+### Which URIs are both instance and class? ###
+Contains many examples of resources that both have a type and a superclass, e.g.
+
+> ?s	resist:Dependability
+
+> ?type	rdfs:Resource
+
+> ?superclass	akt:Research-Area
+
+### Does the store use defined relations? ###
+This store uses OWL/RDF vocabulary, some DC, aktors.org and two Foaf predicates:
+  * foaf:nick
+  * foaf:primaryTopic
+
+## Comprehensive Knowledge Archive Network ##
+### Which relations are synonymous? ###
+  * http://xmlns.com/foaf/0.1/name
+  * http://purl.org/dc/terms/contributor
+  * http://purl.org/dc/terms/identifier
+  * http://purl.org/dc/terms/description
+  * http://purl.org/dc/terms/format
+  * http://purl.org/dc/terms/relation
+  * http://purl.org/dc/terms/rights
+  * http://purl.org/dc/terms/subject
+  * http://purl.org/dc/terms/title
+  * http://xmlns.com/foaf/0.1/homepage
+  * http://purl.org/dc/terms/creator
+  * http://xmlns.com/foaf/0.1/mbox
+  * http://xmlns.com/foaf/0.1/page
+
+### Which URIs are both instance and class? ###
+Has no examples of both rdf:type and rdfs:subClassOf.
+
+### Does the store use defined relations? ###
+This store uses only about 25 relations and uses only OWL/RDF, DC and Foaf.
+
+## CulturaLinkedData ##
+### Which relations are synonymous? ###
+  * http://cultura.linkeddata.es/ontology/isbd/P1045 	has note
+  * http://cultura.linkeddata.es/ontology/isbd/P1004 	has title proper
+  * http://cultura.linkeddata.es/ontology/isbd/P1162 	has publication, production, distribution, etc area
+  * http://cultura.linkeddata.es/ontology/frbrer/P2079 	has part (expression)
+  * http://cultura.linkeddata.es/ontology/frbrer/P2080 	is part (expression) of
+  * http://iflastandards.info/ns/fr/frbr/frbrer/P3001 	has title of the work
+  * http://iflastandards.info/ns/isbd/elements/P1032 	has resource identifier
+  * http://iflastandards.info/ns/fr/frbr/frbrer/P2058 	is part (work) of
+  * http://iflastandards.info/ns/fr/frbr/frbrer/P2057 	has part (work)
+  * http://cultura.linkeddata.es/ontology/frbrer/P3039 	has name of person
+
+### Which URIs are both instance and class? ###
+Some Cultura classes have both rdf:type owl:Class and a superclass.
+
+### Does the store use defined relations? ###
+Apart from OWL/RDF, DC and Virtuoso relations, this store uses hundreds of self-defined relations.
+
+## Dbpedia ##
+### Which relations are synonymous? ###
+  * http://dbpedia.org/property/%3EHomepage
+  * http://dbpedia.org/property/%3ELocation
+  * http://dbpedia.org/property/%3EName
+  * http://dbpedia.org/property/%5D%5DNickname
+  * http://dbpedia.org/property/%7DFullname
+  * http://dbpedia.org/property/'''''name
+  * http://dbpedia.org/property/'''Nickname
+  * http://dbpedia.org/property/'''Type
+  * http://dbpedia.org/property/'''name
+  * http://dbpedia.org/property/'''title
+  * http://dbpedia.org/property/'''url
+  * http://dbpedia.org/property/''Name
+  * http://dbpedia.org/property/''clubname
+  * http://dbpedia.org/property/(07371)PostalCode
+  * http://dbpedia.org/property/(photoByKathiBentley)Name
+  * http://dbpedia.org/property/))))))Name
+  * http://dbpedia.org/property/..Name
+  * http://dbpedia.org/property///imageName
+  * http://dbpedia.org/property/01871PostalCode
+  * http://dbpedia.org/property/033PostalCode
+  * http://dbpedia.org/property/05661PostalCode
+  * http://dbpedia.org/property/100+Homepage
+  * http://dbpedia.org/property/10name
+  * http://dbpedia.org/property/17Homepage
+  * http://dbpedia.org/property/1904Fullname
+  * http://dbpedia.org/property/1939Location
+  * http://dbpedia.org/property/1966Location
+  * http://dbpedia.org/property/1cName
+  * http://dbpedia.org/property/1name
+  * http://dbpedia.org/property/200pxNickname
+  * http://dbpedia.org/property/2010Nickname
+  * http://dbpedia.org/property/2012Location
+  * http://dbpedia.org/property/358Label
+
+etc. DBpedia seems to repeat the property 'has name' in many ways. This is gathered by skimming superficially up to the alphabetical position of the number 3. The number of predicates do not become lower further in the alphabet. Ironically, http://dbpedia.org/property/name, does not exist. There is http://dbpedia.org/property/namE though.
+
+DBpedia seems to prefer camelCase above CamelCase for predicates. Underscores or dashes are not used.
+http://dbpedia.org/property/hasWrittenFor
+http://dbpedia.org/ontology/hasJunctionWith
+> are the only predicate that starts with 'has'. For 'is' as a verb there are a dozen, and also 'isa':
+...
+    * http://dbpedia.org/property/isVehicle
+    * http://dbpedia.org/property/isa
+    * http://dbpedia.org/property/isaf
+...
+Further on, there are:
+    * http://dbpedia.org/property/locatedin
+    * http://dbpedia.org/property/partOf
+The namespace that starts with http://dbpedia.org/ontology is better maintained. Predicates are without typo's there. There we have the following kinds of predicates:
+    * http://dbpedia.org/ontology/Automobile/fuelCapacity
+    * http://dbpedia.org/ontology/Automobile/wheelbase
+But no partOf there:
+    * http://dbpedia.org/ontology/part
+
+A random chunck of DBpedia:
+  * http://dbpedia.org/property/inwonersnaam
+  * http://dbpedia.org/property/io
+  * http://dbpedia.org/property/iobdbId
+  * http://dbpedia.org/property/ioc
+  * http://dbpedia.org/property/iocnation
+  * http://dbpedia.org/property/iodine
+  * http://dbpedia.org/property/iomCharacterName
+  * http://dbpedia.org/property/ions
+  * http://dbpedia.org/property/iowprefix
+  * http://dbpedia.org/property/ip
+
+### Which URIs are both instance and class? ###
+Some classes have both rdf:type owl:Class and a superclass.
+
+### Does the store use defined relations? ###
+No. The relations in DbPedia are created by many users.
+
+## Deep Blue (RKBExplorer) ##
+### Which relations are synonymous? ###
+  * akt:family-name
+  * akt:full-name
+  * akts:has-pretty-name
+  * akt:given-name
+  * akt:has-postal-address
+  * akt:has-date
+  * akts:year-of
+  * akt:has-title
+  * akt:has-URL
+  * akt:has-email-address
+  * dcterms:title
+  * dcterms:date
+  * foaf:homepage
+  * foaf:nick
+  * akt:has-web-address
+  * akt:address-postcode
+  * akt:address-city-or-village
+
+### Which URIs are both instance and class? ###
+Many resources have both rdf:type rdfs:Resource, and a superclass.
+
+### Does the store use defined relations? ###
+This triple store uses vocabularies from OWL/RDF, DC, aktors.org and Foaf.

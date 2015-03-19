@@ -1,0 +1,161 @@
+#LORE Temporal Relations Introduction Wiki.
+
+# Preliminary summary of relations #
+### Third level canonical relations ###
+
+**Name**: precedes
+
+**Definition**: when projecting on a 1-dimensional ordered space, x precedes y iff all parts of x are on the left of any TimeInstant that isPartOf y.
+
+
+---
+
+
+**Name**: isTemporalPartOf
+
+**Definition**: when projecting on a 1-dimensional space, x isTemporalPartOf y iff all parts of x are parts of y. That is, every point belonging to x maps to a linear coordinate comprised by y.
+
+
+---
+
+
+**Name**: hasDurationDescription
+
+**Definition**: when projecting on a 1-dimensional ordered space, x hasDurationDescription y iff the sum of every distinct TimeInstants that are part of x is equal to y in some standard measure. This relation relates TimeIntervals and InformationArtifacts.
+
+
+---
+
+
+**Name**: hasDateTimeDescription
+
+**Definition**: when projecting on a 1-dimensional ordered space, x hasDateTimeDescription y iff the exact position of x is equal to y in some standard measure. This relation relates TimeInstant and InformationArtifacts.
+
+
+### Second level relations ###
+
+**Name**: overlapsWith
+
+**Definition**: when projecting on a 1-dimensional space, x overlapWith y iff there is at least 1 z that is part of both x and y, and z is a TimeInterval
+
+
+---
+
+
+**Name**: isTemporallyAdjacentTo
+
+**Definition**: when projecting on a 1-dimensional space, x isTemporallyAdjacentTo y iff there is at least 1 z that is part of both x and y, and z is a TimeInstant
+
+
+---
+
+
+**Name**: hasBeginning
+
+**Definition**: when projecting on a 1-dimensional space, x hasBeginning y iff ForAll x, y, z; TemporalInterval(x) AND TemporalInstant(y) AND TemporalInstant(z) AND isTemporalPartOf (y,x) AND isTemporalPartOf(z,x) AND y ≠ z AND precedes(y, z)
+
+
+---
+
+
+**Name**: #time-owl/IntervalDuring
+
+**Definition**: when projecting on a 1-dimensional ordered space, x IntervalDuring y iff x isTemporalPartOf y AND there is some z part of y that precedes x and there is some w part of y that is preceded by x.
+
+
+### Owl-Time relations ###
+
+**before**
+
+**after**
+
+**hasBeginning**
+
+**hasEnd**
+
+**inside**
+
+**hasDurationDescription**
+
+**hasDateTimeDescription**
+
+**intervalEquals**
+
+**intervalDuring**
+
+**intervalStarts**
+
+**intervalStartedBy**
+
+**intervalBefore**
+
+**intervalAfter**
+
+**intervalFinishes**
+
+**intervalFinishedBy**
+
+**intervalContains**
+
+**intervalMeets**
+
+**intervalMetBy**
+
+**intervalOverlaps**
+
+**intervalOverlappedBy**
+
+
+
+# Introduction #
+
+This list of relations was based on previous work on time relations and reasoning, particularly on the OWL-Time ontology by Hobbs and Pan [1, 2]. Also, more recent work evaluating this ontology was considered [3](3.md).
+This representation of time consider an absolute and linear time. These previously mentioned works are themselves based on previous work by Allen and Hayes [4](4.md), which recognizes the existence of time moments (indecomposable time intervals), points (time intervals with zero duration, reserved for beginnings and ends)  and intervals. There are 13 possible relations between them.
+
+The first 12 are: before; overlaps; starts; meets; during; finishes; and their inverses. The last relation is Equal.
+
+![http://linked-open-relations.googlecode.com/files/TemporalRelationsGraphicalDefinition%2020120301.jpg](http://linked-open-relations.googlecode.com/files/TemporalRelationsGraphicalDefinition%2020120301.jpg)
+
+Another important use for time expressions in Semantic Web is the explicit assertion about time measures. Duration is a standard measure of time unfolding between the beginning and ending instant of an interval. Time instants can also be indexed according to international standards of time keeping (time zones, dates, and times).
+All these relations can be formally defined and reasoned with by adding axioms. However, due to the volatile nature of the Semantic Web, these axioms must be flexible and extendable. For the time being, we will only use natural language definitions of those relations, referring to already existing axioms when required. Since our understanding of time is highly related to our understanding of space, it is useful to understand these relations as combinations of relations of order, parthood, boundary and co-temporality. For instance, the **finishes** relation means that two time intervals share the finish boundary time instant.
+
+
+# Important Open Questions #
+
+1)	Intervals can be generalized by boundary and co-temporality, e.g. x  intervalFinishes y = hasBeginning(x, t2) AND hasBeginning(y, t1) AND hasEnd(x, t3) AND hasEnd(y, t3) AND after(t2, t1) AND intervalDuring(x, y).
+
+2)	Meets and MetBy could be generalized to sharing a boundary and adding the after or before relation; could there be implications for reasoning and would they matter?
+
+3)	Overlaps can be represented as having the end boundary inside some interval and the begin before the beginning of that interval and some interval part during it. – also could have implications for reasoning
+
+4)	In order to define the relations according to numerical values ("x intervalAfter y iff hasDateTimeDescription (hasBeginning(x)) >  hasDateTimeDescription (hasEnd(y)) "), the hasDateTimeDescription must contain reference to a universally valid time description, including time zones. This will be essential only in dynamic applications such as scheduling.
+
+# Examples from other ontologies #
+
+|OBO relations|Mapping|
+|:------------|:------|
+|after|after|
+|begins at end of'|X intervalMetBY y|
+|coincides with'|intervalEquals|
+|during|intervalDuring|
+|ends existing during'|Continuant AND participantOf some (ContinuantLife AND hasPart some (ContinuantLifeEnd intervalDuring y)) |
+|starts and ends existing during'|Continuant AND participantOf some (ContinuantLife AND hasPart some (ContinuantLifeBegin intervalDuring y) AND hasPart some ((ContinuantLifeEnd intervalDuring y) |
+|ends\_at|X intervalFinishedBy y|
+|ends\_at\_beginning\_of|X intervalMeets y|
+|is preceded by'|X before y|
+|is\_extinct|Continuant AND participantOf only (ContinuantLife before now) |
+
+DBPedia time relations
+|birthDate|Person AND participantOf some (PersonLife AND hasBeginning some (TimeInstant AND inside some (TimeInterval AND hasDateTimeDescription some XSDDateTime)) |
+|:--------|:--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|firstPublicationYear|Publication AND outputOf some (PublicationProcessX AND intervalOverlaps some (YearInterval AND hasDateTimeDescription some XSDDateTime) NOT intervalAfter some PublicationProcessX) |
+|firstFlight|SpaceShuttle AND participantOf some (SpaceFlight NOT intervalAfter some SpaceFlight) |
+
+# References #
+1.	Hobbs, J.R. and F. Pan, Time Ontology in OWL, Ontology Engineering Patterns Task Force of the Semantic Web Best Practices and Deployment Working Group, Editor. 2006, World Wide Web Consortium (W3C).
+
+2.	Pan, F., Representing Complex Temporal Phenomena for the Semantic Web and Natural Language, in Computer Science Department,. 2007, University of Sothern California.
+
+3.	Gruninger, M., Verification of the OWL-time ontology, in Proceedings of the 10th international conference on The semantic web - Volume Part I. 2011, Springer-Verlag: Bonn, Germany. p. 225-240.
+
+4.	Allen, J.F. and P.J. Hayes, Moments and points in an interval-based temporal logic. Comput. Intell., 1990. 5(4): p. 225-238.
